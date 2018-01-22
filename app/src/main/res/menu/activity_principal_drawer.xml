@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:title="Mais utilizados"
+        android:checkableBehavior="single">
+        <menu>
+            <item
+                android:id="@+id/nav_aniversario"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Aniversários" />
+            <item
+                android:id="@+id/nav_prazos"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Prazos" />
+            <item
+                android:id="@+id/nav_audiencias"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Audiências" />
+        </menu>
+    </item>
+
+    <item
+        android:title="Adicionais">
+        <menu>
+            <item
+                android:id="@+id/nav_sobre"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Sobre" />
+            <item
+                android:id="@+id/nav_sair"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Sair" />
+        </menu>
+    </item>
+
+</menu>

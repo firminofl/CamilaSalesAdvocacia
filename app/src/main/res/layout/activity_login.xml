@@ -50,7 +50,7 @@
                     android:id="@+id/btacessarLogin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="ACESSAR"
+                    android:text="Acessar"
                     android:textSize="18sp"
                     android:backgroundTint="#ffffff"/>
                 <TextView
