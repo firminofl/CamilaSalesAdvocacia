@@ -12,10 +12,10 @@ import camilasales.camilasalesadvocacia.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ProcessoFragment extends Fragment {
+public class CadastroEditarFisicaFragment extends Fragment {
 
 
-    public ProcessoFragment() {
+    public CadastroEditarFisicaFragment() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class ProcessoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_processo, container, false);
+        return inflater.inflate(R.layout.fragment_cadastro_editar_fisica, container, false);
     }
 
 }

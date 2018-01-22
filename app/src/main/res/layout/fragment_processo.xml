@@ -1,15 +1,27 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="camilasales.camilasalesadvocacia.fragments.ProcessoFragment">
+    tools:context="camilasales.camilasalesadvocacia.fragments.ProcessoHomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ListView
+        android:id="@+id/listProcesso"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="PROCESSOS"
-        android:gravity="center"
-        android:textSize="25sp"/>
+        android:layout_height="match_parent">
+    </ListView>
 
-</FrameLayout>
+    <Button
+        android:id="@+id/btnAddProcesso"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:text="+"
+        android:textSize="30sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/fundo_botao"
+        android:textColor="#ffffff"/>
+
+</RelativeLayout>

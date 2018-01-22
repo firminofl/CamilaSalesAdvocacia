@@ -7,10 +7,6 @@ import android.support.v4.app.FragmentPagerAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-import camilasales.camilasalesadvocacia.fragments.FisicaFragment;
-import camilasales.camilasalesadvocacia.fragments.JuridicaFragment;
-import camilasales.camilasalesadvocacia.fragments.ProcessoFragment;
-
 /**
  * Created by Filipe Firmino on 21/01/2018.
  */
