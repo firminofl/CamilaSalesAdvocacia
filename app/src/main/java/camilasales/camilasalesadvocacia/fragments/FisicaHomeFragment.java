@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import camilasales.camilasalesadvocacia.CadastroEditarActivity;
+import camilasales.camilasalesadvocacia.PrincipalActivity;
 import camilasales.camilasalesadvocacia.R;
 
 /**
@@ -18,7 +19,7 @@ import camilasales.camilasalesadvocacia.R;
 public class FisicaHomeFragment extends Fragment {
 
 
-    private Button botaoCadastrar;
+    private Button botaoCadastrarFisica;
 
     public FisicaHomeFragment() {
         // Required empty public constructor
@@ -30,18 +31,15 @@ public class FisicaHomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_fisica, container, false);
-        botaoCadastrar = (Button) view.findViewById(R.id.btnAddFisica);
+        botaoCadastrarFisica = (Button) view.findViewById(R.id.btnAddFisica);//floating button (+) na tab Física, para cadastrar pessoa física
 
-        botaoCadastrar.setOnClickListener(new View.OnClickListener() {
+        botaoCadastrarFisica.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent abrirCadastroActivity = new Intent(getContext(), CadastroEditarActivity.class);
-                startActivity(abrirCadastroActivity);
-                try {
-                    finalize();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                }
+                Intent abrirTelaCadastroFisica = new Intent(getContext(), CadastroEditarActivity.class);//abre a tela de cadastro de pessoa juridica
+                abrirTelaCadastroFisica.putExtra("TelaCadastroOpcoes", 1);
+                startActivity(abrirTelaCadastroFisica);
+                getActivity().finish();//finaliza a activity para não coloca-la na pilha de execução
             }
         });
         return view;

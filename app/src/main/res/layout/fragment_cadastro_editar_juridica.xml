@@ -17,7 +17,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Pessoa Física"
+            android:text="Pessoa Jurídica"
             android:gravity="center"
             android:textSize="30sp"/>
 
@@ -25,7 +25,7 @@
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nome*"
+            android:hint="Nome / Razão social*"
             android:textColorHint="#000000"
             android:inputType="text"/>
 
@@ -33,52 +33,7 @@
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="CPF*"
-            android:textColorHint="#000000"
-            android:inputType="date"/>
-
-        <EditText
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="RG*"
-            android:textColorHint="#000000"
-            android:inputType="date"/>
-
-        <EditText
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Registro CNH"
-            android:textColorHint="#000000"
-            android:inputType="number"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Selecione um sexo*"
-            android:textSize="20sp"/>
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <RadioButton
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Feminino"/>
-            <RadioButton
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Masculino"/>
-        </RadioGroup>
-
-        <EditText
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Data de nascimento"
+            android:hint="CNPJ*"
             android:textColorHint="#000000"
             android:inputType="date"/>
 
@@ -89,6 +44,14 @@
             android:hint="Telefone*"
             android:textColorHint="#000000"
             android:inputType="number"/>
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail"
+            android:textColorHint="#000000"
+            android:inputType="text"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -143,23 +106,6 @@
 
         </LinearLayout>
 
-
-        <EditText
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="E-mail"
-            android:textColorHint="#000000"
-            android:inputType="textEmailAddress"/>
-
-        <EditText
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Profissão"
-            android:textColorHint="#000000"
-            android:inputType="text"/>
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -180,6 +126,6 @@
             android:layout_height="wrap_content"
             android:visibility="invisible"/>
 
-
     </LinearLayout>
+
 </ScrollView>
