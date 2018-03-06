@@ -5,21 +5,17 @@
     tools:showIn="navigation_view">
 
     <item
-        android:title="Mais utilizados"
+        android:title="Comuns"
         android:checkableBehavior="single">
         <menu>
             <item
                 android:id="@+id/nav_aniversario"
-                android:icon="@drawable/ic_menu_slideshow"
+                android:icon="@drawable/aniversario_26px"
                 android:title="Aniversários" />
             <item
                 android:id="@+id/nav_prazos"
-                android:icon="@drawable/ic_menu_manage"
+                android:icon="@drawable/calendario_26px"
                 android:title="Prazos" />
-            <item
-                android:id="@+id/nav_audiencias"
-                android:icon="@drawable/ic_menu_slideshow"
-                android:title="Audiências" />
         </menu>
     </item>
 
@@ -28,11 +24,11 @@
         <menu>
             <item
                 android:id="@+id/nav_sobre"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/sobre_26px"
                 android:title="Sobre" />
             <item
                 android:id="@+id/nav_sair"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/sair_26px"
                 android:title="Sair" />
         </menu>
     </item>

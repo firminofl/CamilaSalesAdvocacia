@@ -13,6 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import camilasales.camilasalesadvocacia.fragments.AudienciaHomeFragment;
 import camilasales.camilasalesadvocacia.fragments.FisicaHomeFragment;
 import camilasales.camilasalesadvocacia.fragments.JuridicaHomeFragment;
 import camilasales.camilasalesadvocacia.fragments.ProcessoHomeFragment;
@@ -55,6 +56,7 @@ public class PrincipalActivity extends AppCompatActivity
         tabsPager.addFragment(new FisicaHomeFragment(),"Física");
         tabsPager.addFragment(new JuridicaHomeFragment(),"Jurídica");
         tabsPager.addFragment(new ProcessoHomeFragment(),"Processo");
+        tabsPager.addFragment(new AudienciaHomeFragment(),"Audiência");
         mViewPager.setAdapter(tabsPager);
     }
 
@@ -68,6 +70,7 @@ public class PrincipalActivity extends AppCompatActivity
         }
     }
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -80,15 +83,16 @@ public class PrincipalActivity extends AppCompatActivity
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+          int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+          if (id == R.id.action_settings) {
+              return true;
+          }
 
         return super.onOptionsItemSelected(item);
     }
+
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -99,8 +103,6 @@ public class PrincipalActivity extends AppCompatActivity
         if (id == R.id.nav_aniversario) {
             // Handle the camera action
         } else if (id == R.id.nav_prazos) {
-
-        } else if (id == R.id.nav_audiencias) {
 
         } else if (id == R.id.nav_sobre) {
 
