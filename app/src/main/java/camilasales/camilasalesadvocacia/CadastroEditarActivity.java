@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.WindowManager;
 
+import camilasales.camilasalesadvocacia.fragments.CadastroEditarAudienciaFragment;
 import camilasales.camilasalesadvocacia.fragments.CadastroEditarFisicaFragment;
 import camilasales.camilasalesadvocacia.fragments.CadastroEditarJuridicaFragment;
 
@@ -44,6 +45,15 @@ import camilasales.camilasalesadvocacia.fragments.CadastroEditarJuridicaFragment
                     .add(R.id.TelaCadastroEditar, new CadastroEditarJuridicaFragment())
                     .commit();
                 break;
+            case 3:
+                break;
+            case 4:
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .add(R.id.TelaCadastroEditar, new CadastroEditarAudienciaFragment())
+                        .commit();
+                break;
+
 
             default:
                 break;
