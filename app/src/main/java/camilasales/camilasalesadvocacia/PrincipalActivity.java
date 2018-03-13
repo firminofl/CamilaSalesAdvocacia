@@ -1,5 +1,6 @@
 package camilasales.camilasalesadvocacia;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -106,6 +107,9 @@ public class PrincipalActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_sobre) {
 
+        } else if (id == R.id.nav_caixa) {
+            startActivity(new Intent(PrincipalActivity.this, Caixa_Cadastra_Activity.class));
+            finish();
         } else if (id == R.id.nav_sair) {
             finish();
         }
