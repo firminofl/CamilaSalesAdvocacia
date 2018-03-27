@@ -6,7 +6,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
+import camilasales.camilasalesadvocacia.Mask;
 import camilasales.camilasalesadvocacia.R;
 
 /**
@@ -14,6 +16,8 @@ import camilasales.camilasalesadvocacia.R;
  */
 public class CadastroEditarAudienciaFragment extends Fragment {
 
+    EditText edtDataAudiencia;
+    EditText edtHorarioAudiencia;
 
     public CadastroEditarAudienciaFragment() {
         // Required empty public constructor
@@ -24,7 +28,14 @@ public class CadastroEditarAudienciaFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cadastro_editar_audiencia, container, false);
+        View view = inflater.inflate(R.layout.fragment_cadastro_editar_audiencia, container, false);
+
+        edtDataAudiencia = (EditText) view.findViewById(R.id.edtDataAudiencia);
+        edtHorarioAudiencia = (EditText) view.findViewById(R.id.edtHorarioAudiencia);
+        edtDataAudiencia.addTextChangedListener(Mask.insert("##/##/####", edtDataAudiencia));
+        edtHorarioAudiencia.addTextChangedListener(Mask.insert("##:##", edtHorarioAudiencia));
+
+        return view;
     }
 
 }

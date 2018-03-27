@@ -1,7 +1,7 @@
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         xmlns:tools="http://schemas.android.com/tools"
@@ -21,6 +21,76 @@
             android:text="Audiência"
             android:gravity="center"
             android:textSize="30sp"/>
+
+        <!-- Data da audiencia -->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_DataAudiencia"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            >
+        <EditText
+            android:id="@+id/edtDataAudiencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Data"
+            android:inputType="date"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Horário da audiencia -->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_HorarioAudiencia"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            >
+            <EditText
+                android:id="@+id/edtHorarioAudiencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Horário"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Local da audiencia -->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_LocalAudiencia"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            >
+            <EditText
+                android:id="@+id/edtLocalAudiencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Local"
+                android:inputType="textAutoComplete"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Cliente da audiencia -->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_ClienteAudiencia"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            >
+            <EditText
+                android:id="@+id/edtClieteAudiencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cliente"
+                android:inputType="textAutoComplete"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Vara da audiencia -->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_VaraAudiencia"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            >
+            <EditText
+                android:id="@+id/edtVaraAudiencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Vara"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
 
     </LinearLayout>
 </ScrollView>
