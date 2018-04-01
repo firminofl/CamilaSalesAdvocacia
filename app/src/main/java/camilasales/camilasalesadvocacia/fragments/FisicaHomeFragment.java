@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import camilasales.camilasalesadvocacia.control.CadastroEditarActivity;
+import camilasales.camilasalesadvocacia.control.activity.CadastroEditarActivity;
 import camilasales.camilasalesadvocacia.R;
 
 /**
