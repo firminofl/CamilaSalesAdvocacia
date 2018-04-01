@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import camilasales.camilasalesadvocacia.R;
-import camilasales.camilasalesadvocacia.control.CadastroEditarActivity;
+import camilasales.camilasalesadvocacia.control.activity.CadastroEditarActivity;
 
 /**
  * A simple {@link Fragment} subclass.

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "335570679824",
+    "firebase_url": "https://camilasalesadvocacia-5924e.firebaseio.com",
+    "project_id": "camilasalesadvocacia-5924e",
+    "storage_bucket": "camilasalesadvocacia-5924e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335570679824:android:224b49060d2f2f7f",
+        "android_client_info": {
+          "package_name": "camilasales.camilasalesadvocacia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335570679824-a1pan8cr3v50iathl5pa9g7ho2ge36v2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "camilasales.camilasalesadvocacia",
+            "certificate_hash": "62a0769e3b7197e12e8285721dbbac2790471f3e"
+          }
+        },
+        {
+          "client_id": "335570679824-terg7b6dk8umldonn7r2a8j3elsofj05.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5tst881srQ-X0ptUyuQ3UDz1Wl2Zc28Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335570679824-terg7b6dk8umldonn7r2a8j3elsofj05.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

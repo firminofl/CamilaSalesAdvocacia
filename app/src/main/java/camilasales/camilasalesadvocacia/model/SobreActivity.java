@@ -1,6 +1,7 @@
 package camilasales.camilasalesadvocacia.model;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -10,8 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import camilasales.camilasalesadvocacia.R;
-import camilasales.camilasalesadvocacia.control.CadastroEditarActivity;
-import camilasales.camilasalesadvocacia.control.PrincipalActivity;
+import camilasales.camilasalesadvocacia.control.activity.PrincipalActivity;
 
 public class SobreActivity extends AppCompatActivity {
 
@@ -25,15 +25,6 @@ public class SobreActivity extends AppCompatActivity {
         //botão de voltar no canto superior esquerdo
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); //Mostrar o botão
         getSupportActionBar().setHomeButtonEnabled(true);      //Ativar o botão
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
     }
 
     @Override
