@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 
-import camilasales.camilasalesadvocacia.Mask;
+import camilasales.camilasalesadvocacia.control.Mask;
 import camilasales.camilasalesadvocacia.R;
 
 /**

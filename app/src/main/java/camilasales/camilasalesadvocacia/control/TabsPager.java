@@ -1,4 +1,4 @@
-package camilasales.camilasalesadvocacia;
+package camilasales.camilasalesadvocacia.control;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

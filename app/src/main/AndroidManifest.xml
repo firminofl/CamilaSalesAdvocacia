@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".LoginActivity"
-            android:screenOrientation="portrait"></activity>
+            android:name=".control.LoginActivity"
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".PrincipalActivity"
+            android:name=".control.PrincipalActivity"
             android:label="CSACJ"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
@@ -24,9 +24,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CadastroEditarActivity"
-            android:screenOrientation="portrait"></activity>
-        <activity android:name=".Caixa_Cadastra_Activity">
+            android:name=".control.CadastroEditarActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".control.Caixa_Cadastra_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".model.SobreActivity"
+            android:label="@string/title_activity_sobre"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

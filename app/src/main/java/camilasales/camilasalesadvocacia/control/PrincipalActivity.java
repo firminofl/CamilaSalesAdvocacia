@@ -1,4 +1,4 @@
-package camilasales.camilasalesadvocacia;
+package camilasales.camilasalesadvocacia.control;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,10 +14,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import camilasales.camilasalesadvocacia.R;
 import camilasales.camilasalesadvocacia.fragments.AudienciaHomeFragment;
 import camilasales.camilasalesadvocacia.fragments.FisicaHomeFragment;
 import camilasales.camilasalesadvocacia.fragments.JuridicaHomeFragment;
 import camilasales.camilasalesadvocacia.fragments.ProcessoHomeFragment;
+import camilasales.camilasalesadvocacia.model.SobreActivity;
 
 public class PrincipalActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -107,6 +109,8 @@ public class PrincipalActivity extends AppCompatActivity
         } else if (id == R.id.nav_prazos) {
 
         } else if (id == R.id.nav_sobre) {
+            startActivity(new Intent(PrincipalActivity.this, SobreActivity.class));
+            finish();
 
         } else if (id == R.id.nav_caixa) {
             startActivity(new Intent(PrincipalActivity.this, Caixa_Cadastra_Activity.class));

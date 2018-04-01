@@ -1,4 +1,4 @@
-package camilasales.camilasalesadvocacia;
+package camilasales.camilasalesadvocacia.control;
 
 import android.text.Editable;
 import android.text.TextWatcher;

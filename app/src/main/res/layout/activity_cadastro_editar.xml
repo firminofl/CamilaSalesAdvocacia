@@ -6,6 +6,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="camilasales.camilasalesadvocacia.CadastroEditarActivity">
+    tools:context="camilasales.camilasalesadvocacia.control.CadastroEditarActivity">
 
 </RelativeLayout>
