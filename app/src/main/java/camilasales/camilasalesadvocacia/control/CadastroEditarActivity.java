@@ -11,6 +11,7 @@ import camilasales.camilasalesadvocacia.R;
 import camilasales.camilasalesadvocacia.fragments.CadastroEditarAudienciaFragment;
 import camilasales.camilasalesadvocacia.fragments.CadastroEditarFisicaFragment;
 import camilasales.camilasalesadvocacia.fragments.CadastroEditarJuridicaFragment;
+import camilasales.camilasalesadvocacia.fragments.CadastroEditarProcessoFragment;
 
     public class CadastroEditarActivity extends AppCompatActivity {
 
@@ -46,6 +47,10 @@ import camilasales.camilasalesadvocacia.fragments.CadastroEditarJuridicaFragment
                     .commit();
                 break;
             case 3:
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .add(R.id.TelaCadastroEditar, new CadastroEditarProcessoFragment())
+                        .commit();
                 break;
             case 4:
                 getSupportFragmentManager()

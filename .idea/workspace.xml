@@ -7,35 +7,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7c562b5-82ca-4105-a1ad-598e45cdb80d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/model/SobreActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_sobre.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_sobre.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_sobre.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/CadastroEditarProcessoFragment.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_cadastro_editar_processo.xml" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/CadastroEditarActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/CadastroEditarActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/Caixa_Cadastra_Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/Caixa_Cadastra_Activity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/LoginActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/Mask.java" afterPath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/Mask.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/PrincipalActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/PrincipalActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/TabsPager.java" afterPath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/TabsPager.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/AudienciaHomeFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/AudienciaHomeFragment.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/CadastroEditarAudienciaFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/CadastroEditarAudienciaFragment.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/FisicaHomeFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/FisicaHomeFragment.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/JuridicaHomeFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/JuridicaHomeFragment.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_cadastro_editar.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_cadastro_editar.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_caixa__cadastra_.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_caixa__cadastra_.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/app_bar_principal.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/app_bar_principal.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_principal.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_principal.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/CadastroEditarActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/CadastroEditarActivity.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/ProcessoHomeFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/ProcessoHomeFragment.java" />
     </list>
     <ignored path="$PROJECT_DIR$/app/build/intermediates/assets/" />
     <ignored path="$PROJECT_DIR$/app/build/intermediates/blame/" />
@@ -78,70 +63,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SobreActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/model/SobreActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="55" column="46" lean-forward="false" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="content_sobre.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_sobre.xml">
+      <file leaf-file-name="fragment_cadastro_editar_processo.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_cadastro_editar_processo.xml">
           <provider editor-type-id="android-designer2">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1081">
-              <caret line="45" column="33" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_sobre.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_sobre.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="27" lean-forward="false" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
-              <folding>
-                <element signature="e#571#594#0" expanded="true" />
-                <element signature="e#1780#1799#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PrincipalActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/PrincipalActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="35" column="37" lean-forward="false" selection-start-line="34" selection-start-column="8" selection-end-line="35" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CadastroEditarActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/CadastroEditarActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="84" column="8" lean-forward="false" selection-start-line="84" selection-start-column="8" selection-end-line="89" selection-end-column="9" />
+            <state relative-caret-position="136">
+              <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -2397,10 +2326,13 @@
         <option value="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/TabsPager.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/PrincipalActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/model/SobreActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/CadastroEditarProcessoFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/ProcessoHomeFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/CadastroEditarActivity.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -2446,20 +2378,6 @@
             <path>
               <item name="CSACJ" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="camilasalesadvocacia" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="control" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CSACJ" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="camilasalesadvocacia" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CSACJ" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
@@ -2467,12 +2385,6 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
               <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="CSACJ" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
           </expand>
           <select />
@@ -2485,7 +2397,7 @@
     <property name="device.picker.selection" value="0030021829" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1522557230343" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1522559015642" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
@@ -2819,7 +2731,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2829,7 +2741,7 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290469" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -3029,20 +2941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/CadastroEditarFisicaFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/FisicaHomeFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_cadastro_editar_juridica.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -3112,14 +3010,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/CadastroEditarActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="84" column="8" lean-forward="false" selection-start-line="84" selection-start-column="8" selection-end-line="89" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/model/SobreActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -3136,8 +3026,8 @@
         <state relative-caret-position="680">
           <caret line="40" column="27" lean-forward="false" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
           <folding>
-            <element signature="e#571#594#0" expanded="true" />
-            <element signature="e#1780#1799#0" expanded="true" />
+            <element signature="e#571#594#0" expanded="false" />
+            <element signature="e#1780#1799#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3155,8 +3045,78 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1081">
-          <caret line="45" column="33" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="33" />
+        <state relative-caret-position="381">
+          <caret line="131" column="56" lean-forward="true" selection-start-line="131" selection-start-column="56" selection-end-line="131" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/JuridicaHomeFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/CadastroEditarJuridicaFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/CadastroEditarFisicaFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/CadastroEditarProcessoFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" column="47" lean-forward="true" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/CadastroEditarActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="51" column="90" lean-forward="false" selection-start-line="51" selection-start-column="90" selection-end-line="51" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/ProcessoHomeFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="45" column="20" lean-forward="false" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+          <folding>
+            <element signature="e#1097#1596#0" expanded="true" />
+            <element signature="e#1595#1596#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/FisicaHomeFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="38" column="38" lean-forward="false" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_cadastro_editar_processo.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
           <folding />
         </state>
       </provider>
