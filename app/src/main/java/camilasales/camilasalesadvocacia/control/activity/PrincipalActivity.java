@@ -1,4 +1,4 @@
-package camilasales.camilasalesadvocacia.control;
+package camilasales.camilasalesadvocacia.control.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import camilasales.camilasalesadvocacia.R;
+import camilasales.camilasalesadvocacia.control.TabsPager;
 import camilasales.camilasalesadvocacia.fragments.AudienciaHomeFragment;
 import camilasales.camilasalesadvocacia.fragments.FisicaHomeFragment;
 import camilasales.camilasalesadvocacia.fragments.JuridicaHomeFragment;

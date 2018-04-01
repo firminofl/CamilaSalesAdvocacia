@@ -1,4 +1,4 @@
-    package camilasales.camilasalesadvocacia.control;
+    package camilasales.camilasalesadvocacia.control.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
