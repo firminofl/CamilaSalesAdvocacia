@@ -8,6 +8,7 @@ public class PessoaFisica {
     private int registro_cnh;
     private String sexo;
     private String data_nasc;
+    private int telefone;
     private String endereco;
     private int numero;
     private String cidade;
@@ -66,6 +67,14 @@ public class PessoaFisica {
 
     public void setData_nasc(String data_nasc) {
         this.data_nasc = data_nasc;
+    }
+
+    public int getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(int telefone) {
+        this.telefone = telefone;
     }
 
     public String getEndereco() {

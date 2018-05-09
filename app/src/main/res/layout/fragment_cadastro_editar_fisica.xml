@@ -22,7 +22,7 @@
             android:textSize="30sp"/>
 
         <EditText
-
+            android:id="@+id/edtNomePessoaFisica"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nome*"
@@ -30,7 +30,7 @@
             android:inputType="text"/>
 
         <EditText
-
+            android:id="@+id/edtCpfPessoaFisica"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="CPF*"
@@ -38,7 +38,7 @@
             android:inputType="date"/>
 
         <EditText
-
+            android:id="@+id/edtRgPessoaFisica"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="RG*"
@@ -46,7 +46,7 @@
             android:inputType="date"/>
 
         <EditText
-
+            android:id="@+id/edtCnhPessoaFisica"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Registro CNH"
@@ -63,19 +63,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <RadioButton
-
+                android:id="@+id/rbFemininoPessoaFisica"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Feminino"/>
             <RadioButton
-
+                android:id="@+id/rbMasculinoPessoaFisica"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Masculino"/>
         </RadioGroup>
 
         <EditText
-
+            android:id="@+id/edtDataNascPessoaFisica"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Data de nascimento"
@@ -83,7 +83,7 @@
             android:inputType="date"/>
 
         <EditText
-
+            android:id="@+id/edtTelefonePessoaFisica"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Telefone*"
@@ -97,7 +97,7 @@
             android:background="@drawable/customborder">
 
             <EditText
-
+                android:id="@+id/edtEnderecoPessoaFisica"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Endereço"
@@ -105,7 +105,7 @@
                 android:inputType="text"/>
 
             <EditText
-
+                android:id="@+id/edtNumeroPessoaFisica"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Número"
@@ -113,20 +113,20 @@
                 android:inputType="number"/>
 
             <EditText
-
+                android:id="@+id/edtCidadePessoaFisica"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Cidade"
                 android:textColorHint="#000000"
                 android:inputType="text"/>
             <Spinner
-
+                android:id="@+id/spEstadosPessoaFisica"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:entries="@array/estados"/>
 
             <EditText
-
+                android:id="@+id/edtBairroPessoaFisica"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Bairro"
@@ -134,7 +134,7 @@
                 android:inputType="text"/>
 
             <EditText
-
+                android:id="@+id/edtCepPessoaFisica"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="CEP"
@@ -145,7 +145,7 @@
 
 
         <EditText
-
+            android:id="@+id/edtEmailPessoaFisica"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="E-mail"
@@ -153,7 +153,7 @@
             android:inputType="textEmailAddress"/>
 
         <EditText
-
+            android:id="@+id/edtProfissaoPessoaFisica"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Profissão"
