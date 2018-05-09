@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtViewNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome"/>
+
+    <TextView
+        android:id="@+id/txtViewCpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CPF"/>
+
+    <TextView
+        android:id="@+id/txtViewRg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RG"/>
+
+    <TextView
+        android:id="@+id/txtViewCnh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CNH"/>
+
+    <TextView
+        android:id="@+id/txtViewSexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sexo"/>
+
+    <TextView
+        android:id="@+id/txtViewDataNasc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data Nascimento"/>
+
+    <TextView
+        android:id="@+id/txtViewTelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Telefone"/>
+
+    <TextView
+        android:id="@+id/txtViewEndereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Endereco"/>
+
+    <TextView
+        android:id="@+id/txtViewNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Numero"/>
+
+    <TextView
+        android:id="@+id/txtViewCidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cidade"/>
+
+    <TextView
+        android:id="@+id/txtViewEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estado"/>
+
+    <TextView
+        android:id="@+id/txtViewBairro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bairro"/>
+
+    <TextView
+        android:id="@+id/txtViewCep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CEP"/>
+
+    <TextView
+        android:id="@+id/txtViewEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"/>
+
+    <TextView
+        android:id="@+id/txtViewProfissao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profissao"/>
+</LinearLayout>
