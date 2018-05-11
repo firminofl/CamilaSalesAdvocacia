@@ -3,18 +3,18 @@ package camilasales.camilasalesadvocacia.model.Entidades;
 public class PessoaFisica {
 
     private String nome;
-    private int cpf;
-    private int rg;
-    private int registro_cnh;
+    private String cpf;
+    private String rg;
+    private String registro_cnh;
     private String sexo;
     private String data_nasc;
-    private int telefone;
+    private String telefone;
     private String endereco;
-    private int numero;
+    private String numero;
     private String cidade;
     private String estado;
     private String bairro;
-    private int cep;
+    private String cep;
     private String email;
     private String profissao;
 
@@ -29,27 +29,27 @@ public class PessoaFisica {
         this.nome = nome;
     }
 
-    public int getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(int cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
-    public int getRg() {
+    public String getRg() {
         return rg;
     }
 
-    public void setRg(int rg) {
+    public void setRg(String rg) {
         this.rg = rg;
     }
 
-    public int getRegistro_cnh() {
+    public String getRegistro_cnh() {
         return registro_cnh;
     }
 
-    public void setRegistro_cnh(int registro_cnh) {
+    public void setRegistro_cnh(String registro_cnh) {
         this.registro_cnh = registro_cnh;
     }
 
@@ -69,11 +69,11 @@ public class PessoaFisica {
         this.data_nasc = data_nasc;
     }
 
-    public int getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(int telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 
@@ -85,11 +85,11 @@ public class PessoaFisica {
         this.endereco = endereco;
     }
 
-    public int getNumero() {
+    public String getNumero() {
         return numero;
     }
 
-    public void setNumero(int numero) {
+    public void setNumero(String numero) {
         this.numero = numero;
     }
 
@@ -117,11 +117,11 @@ public class PessoaFisica {
         this.bairro = bairro;
     }
 
-    public int getCep() {
+    public String getCep() {
         return cep;
     }
 
-    public void setCep(int cep) {
+    public void setCep(String cep) {
         this.cep = cep;
     }
 

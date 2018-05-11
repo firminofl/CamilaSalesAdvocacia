@@ -147,9 +147,9 @@ public class CadastroEditarActivity extends AppCompatActivity {
                 !spEstadoPF.getSelectedItem().equals("Escolha um estado")) {
 
             pessoaFisica.setNome(edtNomePF.getText().toString());//Nome pessoa fisica
-            pessoaFisica.setCpf(Integer.valueOf(edtCpfPF.getText().toString()));//CPF pessoa fisica
-            pessoaFisica.setRg(Integer.valueOf(edtRgPF.getText().toString()));//RG pessoa fisica
-            pessoaFisica.setTelefone(Integer.parseInt(edtTelefonePF.getText().toString()));//Telefone pessoa fisica
+            pessoaFisica.setCpf(edtCpfPF.getText().toString());//CPF pessoa fisica
+            pessoaFisica.setRg(edtRgPF.getText().toString());//RG pessoa fisica
+            pessoaFisica.setTelefone(edtTelefonePF.getText().toString());//Telefone pessoa fisica
 
             if (rbSexoFemininoPF.isChecked()) {
                 pessoaFisica.setSexo(rbSexoFemininoPF.getText().toString());
@@ -161,9 +161,9 @@ public class CadastroEditarActivity extends AppCompatActivity {
 
             //CNH
             if (edtCnhPF.getText().toString().isEmpty()) {
-                pessoaFisica.setRegistro_cnh(0);//CNH pessoa fisica
+                pessoaFisica.setRegistro_cnh(null);//CNH pessoa fisica
             } else {
-                pessoaFisica.setRegistro_cnh(Integer.valueOf(edtCnhPF.getText().toString()));//CNH pessoa fisica
+                pessoaFisica.setRegistro_cnh(edtCnhPF.getText().toString());//CNH pessoa fisica
             }
 
             //DATA NASCIMENTO
@@ -182,9 +182,9 @@ public class CadastroEditarActivity extends AppCompatActivity {
 
             //NUMERO
             if (edtNumeroPF.getText().toString().isEmpty()) {
-                pessoaFisica.setNumero(0);//Numero pessoa fisica
+                pessoaFisica.setNumero(null);//Numero pessoa fisica
             } else {
-                pessoaFisica.setNumero(Integer.parseInt(edtNumeroPF.getText().toString()));//Numero pessoa fisica
+                pessoaFisica.setNumero(edtNumeroPF.getText().toString());//Numero pessoa fisica
             }
 
             //CIDADE
@@ -205,9 +205,9 @@ public class CadastroEditarActivity extends AppCompatActivity {
 
             //CEP
             if (edtCepPF.getText().toString().isEmpty()) {
-                pessoaFisica.setCep(0);//CEP pessoa fisica
+                pessoaFisica.setCep(null);//CEP pessoa fisica
             } else {
-                pessoaFisica.setCep(Integer.parseInt(edtCepPF.getText().toString()));//CEP pessoa fisica
+                pessoaFisica.setCep(edtCepPF.getText().toString());//CEP pessoa fisica
             }
 
             //EMAIL
@@ -227,7 +227,7 @@ public class CadastroEditarActivity extends AppCompatActivity {
             salvarPessoaFisica(pessoaFisica);
 
         } else {
-            Toast.makeText(CadastroEditarActivity.this, "Campos obrigatórios em falta!", Toast.LENGTH_LONG).show();
+            Toast.makeText(CadastroEditarActivity.this, "Campos obrigatórios em falta!", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -254,7 +254,7 @@ public class CadastroEditarActivity extends AppCompatActivity {
         try {
             firebase = ConfiguracaoFirebase.getFirebase().child("addPessoaFisica");
             firebase.child(pessoaFisica.getNome()).setValue(pessoaFisica);
-            Toast.makeText(CadastroEditarActivity.this, "Pessoa física adicionada com sucesso!", Toast.LENGTH_LONG).show();
+            Toast.makeText(CadastroEditarActivity.this, "Pessoa física adicionada com sucesso!", Toast.LENGTH_SHORT).show();
 
             return true;
         } catch (Exception e) {
