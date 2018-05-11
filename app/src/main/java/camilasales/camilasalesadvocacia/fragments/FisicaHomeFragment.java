@@ -24,8 +24,8 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 import camilasales.camilasalesadvocacia.DAO.ConfiguracaoFirebase;
-import camilasales.camilasalesadvocacia.control.activity.CadastroEditarActivity;
 import camilasales.camilasalesadvocacia.R;
+import camilasales.camilasalesadvocacia.control.activity.CadastroEditarActivity;
 import camilasales.camilasalesadvocacia.control.adapter.PessoaFisicaAdapter;
 import camilasales.camilasalesadvocacia.model.Entidades.PessoaFisica;
 
@@ -80,7 +80,7 @@ public class FisicaHomeFragment extends Fragment {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 pessoaFisica.clear();
 
-                for (DataSnapshot dados : dataSnapshot.getChildren()){
+                for (DataSnapshot dados : dataSnapshot.getChildren()) {
                     PessoaFisica pessoaFisicaNova = dados.getValue(PessoaFisica.class);
 
                     pessoaFisica.add(pessoaFisicaNova);
@@ -107,7 +107,7 @@ public class FisicaHomeFragment extends Fragment {
                 builder.setTitle("Excluir");
 
                 //Mensagem do Alert Dialog
-                builder.setMessage("Quer mesmo excluir: "+ excluirPessoaFisica.getNome()+ " ?");
+                builder.setMessage("Quer mesmo excluir: " + excluirPessoaFisica.getNome() + " ?");
 
                 //Botão SIM do Alert Dialog
                 builder.setPositiveButton("Sim", new DialogInterface.OnClickListener() {

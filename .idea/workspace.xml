@@ -7,15 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6438de2c-23b4-4f40-b976-ea9841ae5b4b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/FisicaHomeFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/FisicaHomeFragment.java" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
@@ -43,15 +34,14 @@
       <file leaf-file-name="FisicaHomeFragment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/FisicaHomeFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="103" column="83" lean-forward="false" selection-start-line="103" selection-start-column="83" selection-end-line="103" selection-end-column="83" />
+            <state relative-caret-position="252">
+              <caret line="113" column="29" lean-forward="false" selection-start-line="113" selection-start-column="29" selection-end-line="113" selection-end-column="29" />
               <folding>
-                <element signature="e#3669#5371#0" expanded="true" />
-                <element signature="e#4348#4814#0" expanded="true" />
-                <element signature="e#4813#4814#0" expanded="true" />
-                <element signature="e#4911#5194#0" expanded="true" />
-                <element signature="e#5193#5194#0" expanded="true" />
-                <element signature="e#5370#5371#0" expanded="true" />
+                <element signature="e#3670#5374#0" expanded="true" />
+                <element signature="e#4816#4817#0" expanded="true" />
+                <element signature="e#4914#5197#0" expanded="true" />
+                <element signature="e#5196#5197#0" expanded="true" />
+                <element signature="e#5373#5374#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2351,7 +2341,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="233" />
     <option name="y" value="237" />
     <option name="width" value="1400" />
@@ -2627,7 +2617,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2765,15 +2755,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/FisicaHomeFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="103" column="83" lean-forward="false" selection-start-line="103" selection-start-column="83" selection-end-line="103" selection-end-column="83" />
+        <state relative-caret-position="252">
+          <caret line="113" column="29" lean-forward="false" selection-start-line="113" selection-start-column="29" selection-end-line="113" selection-end-column="29" />
           <folding>
-            <element signature="e#3669#5371#0" expanded="true" />
-            <element signature="e#4348#4814#0" expanded="true" />
-            <element signature="e#4813#4814#0" expanded="true" />
-            <element signature="e#4911#5194#0" expanded="true" />
-            <element signature="e#5193#5194#0" expanded="true" />
-            <element signature="e#5370#5371#0" expanded="true" />
+            <element signature="e#3670#5374#0" expanded="true" />
+            <element signature="e#4816#4817#0" expanded="true" />
+            <element signature="e#4914#5197#0" expanded="true" />
+            <element signature="e#5196#5197#0" expanded="true" />
+            <element signature="e#5373#5374#0" expanded="true" />
           </folding>
         </state>
       </provider>
