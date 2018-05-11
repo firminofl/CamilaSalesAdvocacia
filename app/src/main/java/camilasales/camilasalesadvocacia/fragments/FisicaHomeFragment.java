@@ -1,16 +1,20 @@
 package camilasales.camilasalesadvocacia.fragments;
 
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -38,6 +42,8 @@ public class FisicaHomeFragment extends Fragment {
     private ValueEventListener valueEventListenerPF;
     private DatabaseReference firebase;
     private Context context;
+    private AlertDialog alerta;
+    private PessoaFisica excluirPessoaFisica;
 
     public FisicaHomeFragment() {
         // Required empty public constructor
@@ -61,9 +67,10 @@ public class FisicaHomeFragment extends Fragment {
             }
         });
 
+        context = getActivity().getApplicationContext();
         pessoaFisica = new ArrayList<>();
         listView = (ListView) view.findViewById(R.id.listViewPessoaFisica);
-        pessoaFisicaAdapter = new PessoaFisicaAdapter(getActivity().getApplicationContext(), pessoaFisica);
+        pessoaFisicaAdapter = new PessoaFisicaAdapter(context, pessoaFisica);
         listView.setAdapter(pessoaFisicaAdapter);
 
         firebase = ConfiguracaoFirebase.getFirebase().child("addPessoaFisica");
@@ -86,6 +93,48 @@ public class FisicaHomeFragment extends Fragment {
 
             }
         };
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+
+                excluirPessoaFisica = pessoaFisicaAdapter.getItem(position);
+
+                //ALERT DIALOG
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+
+                //Titulo do Alert Dialog
+                builder.setTitle("Excluir");
+
+                //Mensagem do Alert Dialog
+                builder.setMessage("Quer mesmo excluir: "+ excluirPessoaFisica.getNome()+ " ?");
+
+                //Botão SIM do Alert Dialog
+                builder.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        firebase = ConfiguracaoFirebase.getFirebase().child("addPessoaFisica");
+                        firebase.child(excluirPessoaFisica.getNome()).removeValue();
+
+                        Toast.makeText(context, "Item excluído", Toast.LENGTH_SHORT).show();
+                    }
+                });
+
+                //Botão NAO do Alert Dialog
+                builder.setNegativeButton("Não", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(context, "Item mantido", Toast.LENGTH_SHORT).show();
+                    }
+                });
+
+                //Criar Alert Dialog
+                alerta = builder.create();
+
+                //Exibir Alert Dialog
+                alerta.show();
+            }
+        });
         return view;
     }
 
