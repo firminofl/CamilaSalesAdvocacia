@@ -46,7 +46,7 @@ public class FisicaHomeFragment extends Fragment {
     private Context context;
     private AlertDialog alerta;
     private PessoaFisica excluirPessoaFisica;
-    private PessoaFisica selecionarPessoaFisica;
+    private PessoaFisica editarPessoaFisica;
     private View view;
 
     public FisicaHomeFragment() {
@@ -62,13 +62,14 @@ public class FisicaHomeFragment extends Fragment {
 
     @Override
     public boolean onContextItemSelected(MenuItem item) {
+        AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
 
         switch (item.getItemId()) {
             case R.id.menu_editar:
 
+                //editarPessoaFisica(info.position);
                 return true;
             case R.id.menu_excluir:
-                AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
                 excluirPessoaFisica(info.position);
                 return true;
             default:
@@ -95,10 +96,10 @@ public class FisicaHomeFragment extends Fragment {
 
         context = getActivity().getApplicationContext();
         pessoaFisica = new ArrayList<>();
+
         listView = (ListView) view.findViewById(R.id.listViewPessoaFisica);
         pessoaFisicaAdapter = new PessoaFisicaAdapter(context, pessoaFisica);
         listView.setAdapter(pessoaFisicaAdapter);
-
 
         firebase = ConfiguracaoFirebase.getFirebase().child("addPessoaFisica");
 
@@ -122,8 +123,6 @@ public class FisicaHomeFragment extends Fragment {
         };
 
         registerForContextMenu(listView);
-
-
         return view;
     }
 
