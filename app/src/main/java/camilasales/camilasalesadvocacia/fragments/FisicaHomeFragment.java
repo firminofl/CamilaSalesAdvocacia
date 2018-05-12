@@ -9,11 +9,9 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -67,11 +65,11 @@ public class FisicaHomeFragment extends Fragment {
 
         switch (item.getItemId()) {
             case R.id.menu_editar:
-                Toast.makeText(getActivity().getApplicationContext(), "Toast 1", Toast.LENGTH_SHORT).show();
+
                 return true;
             case R.id.menu_excluir:
-                excluirPessoaFisica();
-                Toast.makeText(getActivity().getApplicationContext(), "Toast 2", Toast.LENGTH_SHORT).show();
+                AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+                excluirPessoaFisica(info.position);
                 return true;
             default:
                 return super.onContextItemSelected(item);
@@ -79,8 +77,7 @@ public class FisicaHomeFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_fisica, container, false);
 
@@ -126,56 +123,13 @@ public class FisicaHomeFragment extends Fragment {
 
         registerForContextMenu(listView);
 
-        //EXCLUIR COM O ALERT DIALOG
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
 
-                //excluirPessoaFisica = pessoaFisicaAdapter.getItem(position);
-
-                //ALERT DIALOG
-                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-
-                //Titulo do Alert Dialog
-                builder.setTitle("Excluir");
-
-                //Mensagem do Alert Dialog
-                builder.setMessage("Quer mesmo excluir: " + excluirPessoaFisica.getNome() + " ?");
-
-                //Botão SIM do Alert Dialog
-                builder.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        firebase = ConfiguracaoFirebase.getFirebase().child("addPessoaFisica");
-                        firebase.child(excluirPessoaFisica.getNome()).removeValue();
-
-                        Toast.makeText(context, "Item excluído", Toast.LENGTH_SHORT).show();
-                    }
-                });
-
-                //Botão NAO do Alert Dialog
-                builder.setNegativeButton("Não", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        Toast.makeText(context, "Item mantido", Toast.LENGTH_SHORT).show();
-                    }
-                });
-
-                //Criar Alert Dialog
-                alerta = builder.create();
-
-                //Exibir Alert Dialog
-                alerta.show();
-            }
-        });
         return view;
     }
 
-    private void excluirPessoaFisica(){
-
-
-
-        //excluirPessoaFisica = pessoaFisicaAdapter.getItem(selecte);
+    //EXCLUIR COM O ALERT DIALOG
+    private void excluirPessoaFisica(int position) {
+        excluirPessoaFisica = pessoaFisicaAdapter.getItem(position);
 
         //ALERT DIALOG
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
