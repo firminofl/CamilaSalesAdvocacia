@@ -67,7 +67,6 @@ public class CadastroEditarActivity extends AppCompatActivity {
                         .beginTransaction()
                         .add(R.id.TelaCadastroEditar, new CadastroEditarFisicaFragment())
                         .commit();
-                estadoDeTela = 1;
                 break;
 
             case 2:
@@ -75,23 +74,19 @@ public class CadastroEditarActivity extends AppCompatActivity {
                         .beginTransaction()
                         .add(R.id.TelaCadastroEditar, new CadastroEditarJuridicaFragment())
                         .commit();
-                estadoDeTela = 2;
                 break;
             case 3:
                 getSupportFragmentManager()
                         .beginTransaction()
                         .add(R.id.TelaCadastroEditar, new CadastroEditarProcessoFragment())
                         .commit();
-                estadoDeTela = 3;
                 break;
             case 4:
                 getSupportFragmentManager()
                         .beginTransaction()
                         .add(R.id.TelaCadastroEditar, new CadastroEditarAudienciaFragment())
                         .commit();
-                estadoDeTela = 4;
                 break;
-
 
             default:
                 break;
@@ -114,9 +109,9 @@ public class CadastroEditarActivity extends AppCompatActivity {
                 break;
 
             case R.id.menu_botao_salvar:
-                if (estadoDeTela == 1) {
+                if (telaAbrir == 1) {
                     cadastraPessoaFisica();
-                } else if (estadoDeTela == 2) {
+                } else if (telaAbrir == 2) {
                     Toast.makeText(CadastroEditarActivity.this, "Tô na tela 2", Toast.LENGTH_LONG).show();
                 }
                 break;
