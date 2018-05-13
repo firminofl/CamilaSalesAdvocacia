@@ -99,7 +99,6 @@ public class FisicaHomeFragment extends Fragment {
 
         listView = (ListView) view.findViewById(R.id.listViewPessoaFisica);
         pessoaFisicaAdapter = new PessoaFisicaAdapter(context, pessoaFisica);
-        listView.setAdapter(pessoaFisicaAdapter);
 
         firebase = ConfiguracaoFirebase.getFirebase().child("addPessoaFisica");
 
@@ -122,6 +121,7 @@ public class FisicaHomeFragment extends Fragment {
             }
         };
 
+        listView.setAdapter(pessoaFisicaAdapter);
         registerForContextMenu(listView);
         return view;
     }
