@@ -3,6 +3,7 @@ package camilasales.camilasalesadvocacia.control.adapter;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Build;
+import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -27,8 +28,7 @@ public class PessoaFisicaAdapter extends ArrayAdapter<PessoaFisica> {
         this.context = c;
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
-    @SuppressLint("SetTextI18n")
+    @NonNull
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
@@ -36,12 +36,10 @@ public class PessoaFisicaAdapter extends ArrayAdapter<PessoaFisica> {
 
         if (pessoaFísica != null) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
-
             assert inflater != null;
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-                view = Objects.requireNonNull(inflater).inflate(R.layout.lista_completa_pessoa_fisica, parent, false);
-            }
-            instanciaESetaOsValores(Objects.requireNonNull(view), position);
+            view = inflater.inflate(R.layout.lista_completa_pessoa_fisica, parent, false);
+
+            instanciaESetaOsValores(view, position);
         }
         return view;
     }
