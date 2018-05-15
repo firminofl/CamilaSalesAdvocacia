@@ -13,9 +13,13 @@ import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Spinner;
+import android.widget.Toast;
+
+import com.google.firebase.database.DatabaseReference;
 
 import java.util.Objects;
 
+import camilasales.camilasalesadvocacia.DAO.ConfiguracaoFirebase;
 import camilasales.camilasalesadvocacia.R;
 import camilasales.camilasalesadvocacia.model.Entidades.PessoaFisica;
 
@@ -37,6 +41,8 @@ public class TesteEditarPFActivity extends AppCompatActivity {
     private  EditText edtCepPF;
     private  EditText edtEmailPF;
     private  EditText edtProfissaoPF;
+
+    private DatabaseReference databaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,7 +73,7 @@ public class TesteEditarPFActivity extends AppCompatActivity {
                 break;
 
             case R.id.menu_botao_salvar:
-
+                salvarAlteracoes();
                 break;
 
             default:
@@ -89,6 +95,104 @@ public class TesteEditarPFActivity extends AppCompatActivity {
         finish();
         super.onBackPressed();
     }
+
+    private void salvarAlteracoes(){
+        pegaInformacoesPessoaFisica();
+        PessoaFisica pessoaFisica = new PessoaFisica();
+
+        if (!edtNomePF.getText().toString().isEmpty() &&
+                !edtCpfPF.getText().toString().isEmpty() &&
+                !edtRgPF.getText().toString().isEmpty() &&
+                !edtTelefonePF.getText().toString().isEmpty() &&
+                (!rbSexoFemininoPF.isChecked() || !rbSexoMasculinoPF.isChecked()) &&
+                !spEstadoPF.getSelectedItem().equals("Escolha um estado")) {
+
+            pessoaFisica.setNome(edtNomePF.getText().toString().trim());//Nome pessoa fisica
+            pessoaFisica.setCpf(edtCpfPF.getText().toString().trim());//CPF pessoa fisica
+            pessoaFisica.setRg(edtRgPF.getText().toString().trim());//RG pessoa fisica
+            pessoaFisica.setTelefone(edtTelefonePF.getText().toString().trim());//Telefone pessoa fisica
+
+            if (rbSexoFemininoPF.isChecked()) {
+                pessoaFisica.setSexo(rbSexoFemininoPF.getText().toString().trim());
+            } else {
+                pessoaFisica.setSexo(rbSexoMasculinoPF.getText().toString().trim());
+            }
+
+            //Atributos que não dependem de obrigatoriedade//
+
+            //CNH
+            if (edtCnhPF.getText().toString().isEmpty()) {
+                pessoaFisica.setRegistro_cnh(null);//CNH pessoa fisica
+            } else {
+                pessoaFisica.setRegistro_cnh(edtCnhPF.getText().toString().trim());//CNH pessoa fisica
+            }
+
+            //DATA NASCIMENTO
+            if (edtDataNascPF.getText().toString().isEmpty()) {
+                pessoaFisica.setData_nasc(null);//Data Nascimento pessoa fisica
+            } else {
+                pessoaFisica.setData_nasc(edtDataNascPF.getText().toString().trim());//Data Nascimento pessoa fisica
+            }
+
+            //ENDERECO
+            if (edtEnderecoPF.getText().toString().isEmpty()) {
+                pessoaFisica.setEndereco(null);//Endereco pessoa fisica
+            } else {
+                pessoaFisica.setEndereco(edtEnderecoPF.getText().toString().trim());//Endereco pessoa fisica
+            }
+
+            //NUMERO
+            if (edtNumeroPF.getText().toString().isEmpty()) {
+                pessoaFisica.setNumero(null);//Numero pessoa fisica
+            } else {
+                pessoaFisica.setNumero(edtNumeroPF.getText().toString().trim());//Numero pessoa fisica
+            }
+
+            //CIDADE
+            if (edtCidadePF.getText().toString().isEmpty()) {
+                pessoaFisica.setCidade(null);//Cidade pessoa fisica
+            } else {
+                pessoaFisica.setCidade(edtCidadePF.getText().toString().trim());//Cidade pessoa fisica
+            }
+
+            pessoaFisica.setEstado(spEstadoPF.getSelectedItem().toString().trim());//Estado pessoa fisica
+
+            //BAIRRO
+            if (edtBairroPF.getText().toString().isEmpty()) {
+                pessoaFisica.setBairro(null);//Bairro pessoa fisica
+            } else {
+                pessoaFisica.setBairro(edtBairroPF.getText().toString().trim());//Bairro pessoa fisica
+            }
+
+            //CEP
+            if (edtCepPF.getText().toString().isEmpty()) {
+                pessoaFisica.setCep(null);//CEP pessoa fisica
+            } else {
+                pessoaFisica.setCep(edtCepPF.getText().toString().trim());//CEP pessoa fisica
+            }
+
+            //EMAIL
+            if (edtEmailPF.getText().toString().isEmpty()) {
+                pessoaFisica.setEmail(null);//Email pessoa fisica
+            } else {
+                pessoaFisica.setEmail(edtEmailPF.getText().toString().trim());//Email pessoa fisica
+            }
+
+            //PROFISSAO
+            if (edtProfissaoPF.getText().toString().isEmpty()) {
+                pessoaFisica.setProfissao(null);//Profissão pessoa fisica
+            } else {
+                pessoaFisica.setProfissao(edtProfissaoPF.getText().toString().trim());//Profissão pessoa fisica
+            }
+
+            databaseReference.child("addPessoaFisica").child(pessoaFisica.getNome()).setValue(pessoaFisica);
+            onBackPressed();
+
+        } else {
+            Toast.makeText(getApplicationContext(), "Campos obrigatórios em falta!", Toast.LENGTH_SHORT).show();
+        }
+    }
+
 
     private void pegaInformacoesPessoaFisica() {
         edtNomePF = (EditText) findViewById(R.id.edtNomePessoaFisica2);//Nome pessoa fisica

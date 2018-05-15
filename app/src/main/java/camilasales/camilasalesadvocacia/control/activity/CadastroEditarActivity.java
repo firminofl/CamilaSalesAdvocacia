@@ -274,30 +274,6 @@ public class CadastroEditarActivity extends AppCompatActivity {
         edtProfissaoPF = (EditText) findViewById(R.id.edtProfissaoPessoaFisica2);//Profissao pessoa fisica
     }
 
-    public void atualizaCamposPessoaFisica(PessoaFisica objPFlista) {
-        pegaInformacoesPessoaFisica();
-
-        edtNomePF.setText(objPFlista.getNome());//Nome pessoa fisica
-        edtCpfPF.setText(objPFlista.getCpf());//CPF pessoa fisica
-        edtRgPF.setText(objPFlista.getRg());//RG pessoa fisica
-        edtCnhPF.setText(objPFlista.getRegistro_cnh());//CNH pessoa fisica
-        if (objPFlista.getSexo().equals("Feminino")) {
-            rbSexoFemininoPF.setChecked(true);//Sexo Feminino pessoa fisica
-        } else {
-            rbSexoMasculinoPF.setChecked(true);//Sexo Feminino pessoa fisica
-        }
-        edtDataNascPF.setText(objPFlista.getData_nasc());//Data Nascimento pessoa fisica
-        edtTelefonePF.setText(objPFlista.getTelefone());//Telefone pessoa fisica
-        edtEnderecoPF.setText(objPFlista.getEndereco());//Endereco pessoa fisica
-        edtNumeroPF.setText(objPFlista.getNumero());//Numero pessoa fisica
-        edtCidadePF.setText(objPFlista.getCidade());//Cidade pessoa fisica
-        spEstadoPF.setSelection(0);//Estado pessoa fisica
-        edtBairroPF.setText(objPFlista.getBairro());//Bairro pessoa fisica
-        edtCepPF.setText(objPFlista.getCep());//CEP pessoa fisica
-        edtEmailPF.setText(objPFlista.getEmail());//Email pessoa fisica
-        edtProfissaoPF.setText(objPFlista.getProfissao());//Profissao pessoa fisica
-    }
-
     private void salvarPessoaFisica(PessoaFisica pessoaFisica) {
         try {
             DatabaseReference firebase = ConfiguracaoFirebase.getFirebase().child("addPessoaFisica");
