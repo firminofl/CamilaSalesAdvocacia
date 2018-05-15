@@ -2,10 +2,12 @@ package camilasales.camilasalesadvocacia.fragments;
 
 
 import android.app.AlertDialog;
+import android.app.FragmentManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.v4.app.Fragment;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
@@ -24,18 +26,20 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 import camilasales.camilasalesadvocacia.DAO.ConfiguracaoFirebase;
 import camilasales.camilasalesadvocacia.R;
 import camilasales.camilasalesadvocacia.control.activity.CadastroEditarActivity;
+import camilasales.camilasalesadvocacia.control.activity.TesteEditarPFActivity;
 import camilasales.camilasalesadvocacia.control.adapter.PessoaFisicaAdapter;
 import camilasales.camilasalesadvocacia.model.Entidades.PessoaFisica;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class FisicaHomeFragment extends Fragment {
+public class FisicaHomeFragment extends Fragment implements Serializable {
 
 
     private Button botaoCadastrarFisica;
@@ -47,7 +51,7 @@ public class FisicaHomeFragment extends Fragment {
     private Context context;
     private AlertDialog alerta;
     private PessoaFisica excluirPessoaFisica;
-    private PessoaFisica editarPessoaFisica;
+    public static PessoaFisica editarPessoaFisica;
     private View view;
 
     public FisicaHomeFragment() {
@@ -67,11 +71,18 @@ public class FisicaHomeFragment extends Fragment {
 
         switch (item.getItemId()) {
             case R.id.menu_editar:
-                //AdapterView<?> parent = (AdapterView<?>) listView.getAdapter().getItem(info.position);
-                editarPessoaFisica = (PessoaFisica) listView.getItemAtPosition(info.position);
-                Toast.makeText(context, "Nome pessoa: "+editarPessoaFisica.getNome(), Toast.LENGTH_SHORT).show();
-                CadastroEditarActivity cadastroEditarActivity = null;
-                cadastroEditarActivity.atualizaCamposPessoaFisica(editarPessoaFisica);
+                editarPessoaFisica = (PessoaFisica)listView.getItemAtPosition(info.position);
+
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("editaPF", editarPessoaFisica);
+
+                Intent abrirEditTest = new Intent(context,TesteEditarPFActivity.class);
+
+                abrirEditTest.putExtras(bundle);
+
+                startActivity(abrirEditTest);
+                getActivity().finish();
+
                 return true;
             case R.id.menu_excluir:
                 excluirPessoaFisica(info.position);
@@ -82,23 +93,23 @@ public class FisicaHomeFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_fisica, container, false);
 
         botaoCadastrarFisica = (Button) view.findViewById(R.id.btnAddFisica);//floating button (+) na tab Física, para cadastrar pessoa física
+        context = view.getContext();
 
         botaoCadastrarFisica.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent abrirTelaCadastroFisica = new Intent(getContext().getApplicationContext(), CadastroEditarActivity.class);//abre a tela de cadastro de pessoa juridica
+                Intent abrirTelaCadastroFisica = new Intent(context, CadastroEditarActivity.class);//abre a tela de cadastro de pessoa juridica
                 abrirTelaCadastroFisica.putExtra("TelaCadastroOpcoes", 1);
                 startActivity(abrirTelaCadastroFisica);
                 getActivity().finish();//finaliza a activity para não coloca-la na pilha de execução
             }
         });
 
-        context = getActivity().getApplicationContext();
         pessoaFisica = new ArrayList<>();
 
         listView = (ListView) view.findViewById(R.id.listViewPessoaFisica);
@@ -129,31 +140,6 @@ public class FisicaHomeFragment extends Fragment {
         registerForContextMenu(listView);
         return view;
     }
-
-    /*
-    //EDITAR PESSOA FISICA
-    private void atualizaCamposPessoaFisica(PessoaFisica objPFlista){
-        edtNomePF.setText(objPFlista.getNome());//Nome pessoa fisica
-        edtCpfPF.setText(objPFlista.getCpf());//CPF pessoa fisica
-        edtRgPF.setText(objPFlista.getRg());//RG pessoa fisica
-        edtCnhPF.setText(objPFlista.getRegistro_cnh());//CNH pessoa fisica
-        if(objPFlista.getSexo().equals("Feminino")){
-            rbSexoFemininoPF.setChecked(true);//Sexo Feminino pessoa fisica
-        }else{
-            rbSexoMasculinoPF.setChecked(true);//Sexo Feminino pessoa fisica
-        }
-        edtDataNascPF.setText(objPFlista.getData_nasc());//Data Nascimento pessoa fisica
-        edtTelefonePF.setText(objPFlista.getTelefone());//Telefone pessoa fisica
-        edtEnderecoPF.setText(objPFlista.getEndereco());//Endereco pessoa fisica
-        edtNumeroPF.setText(objPFlista.getNumero());//Numero pessoa fisica
-        edtCidadePF.setText(objPFlista.getCidade());//Cidade pessoa fisica
-        spEstadoPF.setSelection(0);//Estado pessoa fisica
-        edtBairroPF.setText(objPFlista.getBairro());//Bairro pessoa fisica
-        edtCepPF.setText(objPFlista.getCep());//CEP pessoa fisica
-        edtEmailPF.setText(objPFlista.getEmail());//Email pessoa fisica
-        edtProfissaoPF.setText(objPFlista.getProfissao());//Profissao pessoa fisica
-    }
-    */
 
     //EXCLUIR COM O ALERT DIALOG
     private void excluirPessoaFisica(int position) {

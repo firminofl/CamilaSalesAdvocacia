@@ -1,6 +1,8 @@
 package camilasales.camilasalesadvocacia.model.Entidades;
 
-public class PessoaFisica {
+import java.io.Serializable;
+
+public class PessoaFisica implements Serializable {
 
     private String nome;
     private String cpf;

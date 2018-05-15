@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="camilasales.camilasalesadvocacia">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
             android:name=".control.activity.LoginActivity"
             android:screenOrientation="portrait">
@@ -27,23 +26,32 @@
             android:label="CSACJ"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
+
         </activity>
 
         <activity
             android:name=".control.activity.CadastroEditarActivity"
             android:screenOrientation="portrait">
+
         </activity>
 
         <activity
             android:name=".control.activity.Caixa_Cadastra_Activity">
+
         </activity>
 
         <activity
             android:name=".model.SobreActivity"
             android:label="@string/title_activity_sobre"
             android:theme="@style/AppTheme.NoActionBar">
+
         </activity>
 
+        <activity
+            android:name=".control.activity.TesteEditarPFActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
     </application>
 
 </manifest>
