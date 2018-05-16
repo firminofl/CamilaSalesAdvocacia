@@ -1,11 +1,7 @@
 package camilasales.camilasalesadvocacia.control.activity;
 
-import android.app.ActionBar;
-import android.app.Activity;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -17,8 +13,6 @@ import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 
-import java.util.Objects;
-
 import camilasales.camilasalesadvocacia.DAO.ConfiguracaoFirebase;
 import camilasales.camilasalesadvocacia.R;
 import camilasales.camilasalesadvocacia.model.Entidades.PessoaFisica;
@@ -26,23 +20,23 @@ import camilasales.camilasalesadvocacia.model.Entidades.PessoaFisica;
 public class TesteEditarPFActivity extends AppCompatActivity {
 
     private EditText edtNomePF;
-    private  EditText edtCpfPF;
-    private  EditText edtRgPF;
-    private  EditText edtCnhPF;
+    private EditText edtCpfPF;
+    private EditText edtRgPF;
+    private EditText edtCnhPF;
     private RadioButton rbSexoFemininoPF;
-    private  RadioButton rbSexoMasculinoPF;
-    private  EditText edtDataNascPF;
-    private  EditText edtTelefonePF;
-    private  EditText edtEnderecoPF;
-    private  EditText edtNumeroPF;
-    private  EditText edtCidadePF;
+    private RadioButton rbSexoMasculinoPF;
+    private EditText edtDataNascPF;
+    private EditText edtTelefonePF;
+    private EditText edtEnderecoPF;
+    private EditText edtNumeroPF;
+    private EditText edtCidadePF;
     private Spinner spEstadoPF;
-    private  EditText edtBairroPF;
-    private  EditText edtCepPF;
-    private  EditText edtEmailPF;
-    private  EditText edtProfissaoPF;
+    private EditText edtBairroPF;
+    private EditText edtCepPF;
+    private EditText edtEmailPF;
+    private EditText edtProfissaoPF;
 
-    private DatabaseReference databaseReference;
+    private PessoaFisica editaPF;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +53,7 @@ public class TesteEditarPFActivity extends AppCompatActivity {
         pegaInformacoesPessoaFisica();
 
         Bundle receceEdicao = getIntent().getExtras();
-        PessoaFisica editaPF = (PessoaFisica)receceEdicao.getSerializable("editaPF");
+        editaPF = (PessoaFisica) receceEdicao.getSerializable("editaPF");
         atualizaCamposPessoaFisica(editaPF);
     }
 
@@ -96,7 +90,7 @@ public class TesteEditarPFActivity extends AppCompatActivity {
         super.onBackPressed();
     }
 
-    private void salvarAlteracoes(){
+    private void salvarAlteracoes() {
         pegaInformacoesPessoaFisica();
         PessoaFisica pessoaFisica = new PessoaFisica();
 
@@ -107,6 +101,7 @@ public class TesteEditarPFActivity extends AppCompatActivity {
                 (!rbSexoFemininoPF.isChecked() || !rbSexoMasculinoPF.isChecked()) &&
                 !spEstadoPF.getSelectedItem().equals("Escolha um estado")) {
 
+            pessoaFisica.setUid(editaPF.getUid());
             pessoaFisica.setNome(edtNomePF.getText().toString().trim());//Nome pessoa fisica
             pessoaFisica.setCpf(edtCpfPF.getText().toString().trim());//CPF pessoa fisica
             pessoaFisica.setRg(edtRgPF.getText().toString().trim());//RG pessoa fisica
@@ -185,14 +180,15 @@ public class TesteEditarPFActivity extends AppCompatActivity {
                 pessoaFisica.setProfissao(edtProfissaoPF.getText().toString().trim());//Profissão pessoa fisica
             }
 
-            databaseReference.child("addPessoaFisica").child(pessoaFisica.getNome()).setValue(pessoaFisica);
+            //ATUALIZA INFORMAÇÕES NO FIREBASE
+            DatabaseReference firebase = ConfiguracaoFirebase.getFirebase();
+            firebase.child("PessoaFisica").child(pessoaFisica.getUid()).setValue(pessoaFisica);
             onBackPressed();
 
         } else {
             Toast.makeText(getApplicationContext(), "Campos obrigatórios em falta!", Toast.LENGTH_SHORT).show();
         }
     }
-
 
     private void pegaInformacoesPessoaFisica() {
         edtNomePF = (EditText) findViewById(R.id.edtNomePessoaFisica2);//Nome pessoa fisica
@@ -213,14 +209,14 @@ public class TesteEditarPFActivity extends AppCompatActivity {
         edtProfissaoPF = (EditText) findViewById(R.id.edtProfissaoPessoaFisica2);//Profissao pessoa fisica
     }
 
-    public void atualizaCamposPessoaFisica(PessoaFisica objPFlista){
+    public void atualizaCamposPessoaFisica(PessoaFisica objPFlista) {
         edtNomePF.setText(objPFlista.getNome());//Nome pessoa fisica
         edtCpfPF.setText(objPFlista.getCpf());//CPF pessoa fisica
         edtRgPF.setText(objPFlista.getRg());//RG pessoa fisica
         edtCnhPF.setText(objPFlista.getRegistro_cnh());//CNH pessoa fisica
-        if(objPFlista.getSexo().equals("Feminino")){
+        if (objPFlista.getSexo().equals("Feminino")) {
             rbSexoFemininoPF.setChecked(true);//Sexo Feminino pessoa fisica
-        }else{
+        } else {
             rbSexoMasculinoPF.setChecked(true);//Sexo Feminino pessoa fisica
         }
         edtDataNascPF.setText(objPFlista.getData_nasc());//Data Nascimento pessoa fisica
