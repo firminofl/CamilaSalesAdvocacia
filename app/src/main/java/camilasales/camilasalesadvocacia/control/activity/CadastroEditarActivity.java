@@ -16,6 +16,7 @@ import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
 
 import java.util.Objects;
+import java.util.UUID;
 
 import camilasales.camilasalesadvocacia.DAO.ConfiguracaoFirebase;
 import camilasales.camilasalesadvocacia.R;
@@ -64,7 +65,6 @@ public class CadastroEditarActivity extends AppCompatActivity {
         assert bundle != null;
         telaAbrir = bundle.getInt("TelaCadastroOpcoes");
 
-
         switch (telaAbrir) {
             case 1:
                 getSupportFragmentManager()
@@ -94,28 +94,6 @@ public class CadastroEditarActivity extends AppCompatActivity {
                         .commit();
                 break;
 
-            case 5:
-                Bundle receceEdicao = getIntent().getExtras();
-                PessoaFisica editaPF = (PessoaFisica) receceEdicao.getSerializable("editaPF");
-
-                Bundle bundlePFEdit = new Bundle();
-                bundlePFEdit.putSerializable("editaPF", editaPF);
-
-                Intent abrirFragmentPF = new Intent(this, CadastroEditarFisicaFragment.class);
-
-                abrirFragmentPF.putExtra("editarPF", 1);
-                abrirFragmentPF.putExtras(bundlePFEdit);
-
-                CadastroEditarFisicaFragment fragment2 = new CadastroEditarFisicaFragment();
-
-                android.support.v4.app.FragmentManager cadastroEditarFisicaFragment = getSupportFragmentManager();
-                android.support.v4.app.FragmentTransaction transaction = cadastroEditarFisicaFragment.beginTransaction();
-                transaction.replace(R.id.TelaCadastroEditar, fragment2); // give your fragment container id in first parameter
-                transaction.addToBackStack(null);  // if written, this transaction will be added to backstack
-                transaction.commit();
-                //startActivity(abrirFragmentPF);
-                break;
-
             default:
                 break;
         }
@@ -143,6 +121,7 @@ public class CadastroEditarActivity extends AppCompatActivity {
                     Toast.makeText(CadastroEditarActivity.this, "Tô na tela 2", Toast.LENGTH_LONG).show();
                 }
                 break;
+
             default:
                 break;
         }
@@ -168,6 +147,7 @@ public class CadastroEditarActivity extends AppCompatActivity {
                 (!rbSexoFemininoPF.isChecked() || !rbSexoMasculinoPF.isChecked()) &&
                 !spEstadoPF.getSelectedItem().equals("Escolha um estado")) {
 
+            pessoaFisica.setUid(UUID.randomUUID().toString());
             pessoaFisica.setNome(edtNomePF.getText().toString());//Nome pessoa fisica
             pessoaFisica.setCpf(edtCpfPF.getText().toString());//CPF pessoa fisica
             pessoaFisica.setRg(edtRgPF.getText().toString());//RG pessoa fisica
@@ -256,28 +236,28 @@ public class CadastroEditarActivity extends AppCompatActivity {
     }
 
     private void pegaInformacoesPessoaFisica() {
-        edtNomePF = (EditText) findViewById(R.id.edtNomePessoaFisica2);//Nome pessoa fisica
-        edtCpfPF = (EditText) findViewById(R.id.edtCpfPessoaFisica2);//CPF pessoa fisica
-        edtRgPF = (EditText) findViewById(R.id.edtRgPessoaFisica2);//RG pessoa fisica
-        edtCnhPF = (EditText) findViewById(R.id.edtCnhPessoaFisica2);//CNH pessoa fisica
-        rbSexoFemininoPF = (RadioButton) findViewById(R.id.rbFemininoPessoaFisica2);//Sexo Feminino pessoa fisica
-        rbSexoMasculinoPF = (RadioButton) findViewById(R.id.rbMasculinoPessoaFisica2);//Sexo Feminino pessoa fisica
-        edtDataNascPF = (EditText) findViewById(R.id.edtDataNascPessoaFisica2);//Data Nascimento pessoa fisica
-        edtTelefonePF = (EditText) findViewById(R.id.edtTelefonePessoaFisica2);//Telefone pessoa fisica
-        edtEnderecoPF = (EditText) findViewById(R.id.edtEnderecoPessoaFisica2);//Endereco pessoa fisica
-        edtNumeroPF = (EditText) findViewById(R.id.edtNumeroPessoaFisica2);//Numero pessoa fisica
-        edtCidadePF = (EditText) findViewById(R.id.edtCidadePessoaFisica2);//Cidade pessoa fisica
-        spEstadoPF = (Spinner) findViewById(R.id.spEstadosPessoaFisica2);//Estado pessoa fisica
-        edtBairroPF = (EditText) findViewById(R.id.edtBairroPessoaFisica2);//Bairro pessoa fisica
-        edtCepPF = (EditText) findViewById(R.id.edtCepPessoaFisica2);//CEP pessoa fisica
-        edtEmailPF = (EditText) findViewById(R.id.edtEmailPessoaFisica2);//Email pessoa fisica
-        edtProfissaoPF = (EditText) findViewById(R.id.edtProfissaoPessoaFisica2);//Profissao pessoa fisica
+        edtNomePF = (EditText) findViewById(R.id.edtNomePessoaFisica);//Nome pessoa fisica
+        edtCpfPF = (EditText) findViewById(R.id.edtCpfPessoaFisica);//CPF pessoa fisica
+        edtRgPF = (EditText) findViewById(R.id.edtRgPessoaFisica);//RG pessoa fisica
+        edtCnhPF = (EditText) findViewById(R.id.edtCnhPessoaFisica);//CNH pessoa fisica
+        rbSexoFemininoPF = (RadioButton) findViewById(R.id.rbFemininoPessoaFisica);//Sexo Feminino pessoa fisica
+        rbSexoMasculinoPF = (RadioButton) findViewById(R.id.rbMasculinoPessoaFisica);//Sexo Feminino pessoa fisica
+        edtDataNascPF = (EditText) findViewById(R.id.edtDataNascPessoaFisica);//Data Nascimento pessoa fisica
+        edtTelefonePF = (EditText) findViewById(R.id.edtTelefonePessoaFisica);//Telefone pessoa fisica
+        edtEnderecoPF = (EditText) findViewById(R.id.edtEnderecoPessoaFisica);//Endereco pessoa fisica
+        edtNumeroPF = (EditText) findViewById(R.id.edtNumeroPessoaFisica);//Numero pessoa fisica
+        edtCidadePF = (EditText) findViewById(R.id.edtCidadePessoaFisica);//Cidade pessoa fisica
+        spEstadoPF = (Spinner) findViewById(R.id.spEstadosPessoaFisica);//Estado pessoa fisica
+        edtBairroPF = (EditText) findViewById(R.id.edtBairroPessoaFisica);//Bairro pessoa fisica
+        edtCepPF = (EditText) findViewById(R.id.edtCepPessoaFisica);//CEP pessoa fisica
+        edtEmailPF = (EditText) findViewById(R.id.edtEmailPessoaFisica);//Email pessoa fisica
+        edtProfissaoPF = (EditText) findViewById(R.id.edtProfissaoPessoaFisica);//Profissao pessoa fisica
     }
 
     private void salvarPessoaFisica(PessoaFisica pessoaFisica) {
         try {
-            DatabaseReference firebase = ConfiguracaoFirebase.getFirebase().child("addPessoaFisica");
-            firebase.child(pessoaFisica.getNome()).setValue(pessoaFisica);
+            DatabaseReference firebase = ConfiguracaoFirebase.getFirebase().child("PessoaFisica");
+            firebase.child(pessoaFisica.getUid()).setValue(pessoaFisica);
             Toast.makeText(getApplicationContext(), "Pessoa física adicionada com sucesso!", Toast.LENGTH_SHORT).show();
 
         } catch (Exception e) {

@@ -2,19 +2,16 @@ package camilasales.camilasalesadvocacia.fragments;
 
 
 import android.app.AlertDialog;
-import android.app.FragmentManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.support.v4.app.Fragment;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -71,12 +68,12 @@ public class FisicaHomeFragment extends Fragment implements Serializable {
 
         switch (item.getItemId()) {
             case R.id.menu_editar:
-                editarPessoaFisica = (PessoaFisica)listView.getItemAtPosition(info.position);
+                editarPessoaFisica = (PessoaFisica) listView.getItemAtPosition(info.position);
 
                 Bundle bundle = new Bundle();
                 bundle.putSerializable("editaPF", editarPessoaFisica);
 
-                Intent abrirEditTest = new Intent(context,TesteEditarPFActivity.class);
+                Intent abrirEditTest = new Intent(context, TesteEditarPFActivity.class);
 
                 abrirEditTest.putExtras(bundle);
 
@@ -116,7 +113,7 @@ public class FisicaHomeFragment extends Fragment implements Serializable {
         pessoaFisicaAdapter = new PessoaFisicaAdapter(context, pessoaFisica);
         listView.setAdapter(pessoaFisicaAdapter);
 
-        firebase = ConfiguracaoFirebase.getFirebase().child("addPessoaFisica");
+        firebase = ConfiguracaoFirebase.getFirebase().child("PessoaFisica");
 
         valueEventListenerPF = new ValueEventListener() {
             @Override
@@ -158,8 +155,8 @@ public class FisicaHomeFragment extends Fragment implements Serializable {
         builder.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                firebase = ConfiguracaoFirebase.getFirebase().child("addPessoaFisica");
-                firebase.child(excluirPessoaFisica.getNome()).removeValue();
+                firebase = ConfiguracaoFirebase.getFirebase().child("PessoaFisica");
+                firebase.child(excluirPessoaFisica.getUid()).removeValue();
 
                 Toast.makeText(context, "Item excluído", Toast.LENGTH_SHORT).show();
             }

@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 public class PessoaFisica implements Serializable {
 
+    private String Uid;
     private String nome;
     private String cpf;
     private String rg;
@@ -21,6 +22,14 @@ public class PessoaFisica implements Serializable {
     private String profissao;
 
     public PessoaFisica() {
+    }
+
+    public String getUid() {
+        return Uid;
+    }
+
+    public void setUid(String uid) {
+        Uid = uid;
     }
 
     public String getNome() {
