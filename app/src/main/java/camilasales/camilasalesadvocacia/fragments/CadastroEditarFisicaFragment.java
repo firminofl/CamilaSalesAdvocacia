@@ -23,7 +23,7 @@ import java.util.UUID;
 import camilasales.camilasalesadvocacia.DAO.ConfiguracaoFirebase;
 import camilasales.camilasalesadvocacia.R;
 import camilasales.camilasalesadvocacia.control.activity.PrincipalActivity;
-import camilasales.camilasalesadvocacia.model.Entidades.PessoaFisica;
+import camilasales.camilasalesadvocacia.model.entidades.PessoaFisica;
 
 /**
  * A simple {@link Fragment} subclass.
