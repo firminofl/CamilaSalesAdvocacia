@@ -52,6 +52,7 @@
             android:screenOrientation="portrait">
 
         </activity>
+        <activity android:name=".control.adapter.PessoaFisicaAdapter" />
     </application>
 
 </manifest>

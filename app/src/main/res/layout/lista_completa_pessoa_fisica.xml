@@ -1,126 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/txtViewNome"
+        android:id="@+id/txtViewNomeLC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
         android:text="Nome"
-        android:textSize="22sp"
-        android:layout_marginTop="7dp"/>
+        android:textSize="22sp" />
 
     <TextView
-        android:id="@+id/txtViewCpf"
+        android:id="@+id/txtViewCpfLC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
         android:text="CPF"
-        android:textSize="22sp"
-        android:layout_marginTop="7dp"/>
+        android:textSize="22sp" />
 
     <TextView
-        android:id="@+id/txtViewRg"
+        android:id="@+id/txtViewRgLC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
         android:text="RG"
-        android:textSize="22sp"
-        android:layout_marginTop="7dp"/>
+        android:textSize="22sp" />
 
     <TextView
-        android:id="@+id/txtViewCnh"
+        android:id="@+id/txtViewCnhLC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
         android:text="CNH"
-        android:textSize="22sp"
-        android:layout_marginTop="7dp"/>
+        android:textSize="22sp" />
 
     <TextView
-        android:id="@+id/txtViewSexo"
+        android:id="@+id/txtViewSexoLC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
         android:text="Sexo"
-        android:textSize="22sp"
-        android:layout_marginTop="7dp"/>
+        android:textSize="22sp" />
 
     <TextView
-        android:id="@+id/txtViewDataNasc"
+        android:id="@+id/txtViewDataNascLC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
         android:text="Data Nascimento"
-        android:textSize="22sp"
-        android:layout_marginTop="7dp"/>
+        android:textSize="22sp" />
 
     <TextView
-        android:id="@+id/txtViewTelefone"
+        android:id="@+id/txtViewTelefoneLC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
         android:text="Telefone"
-        android:textSize="22sp"
-        android:layout_marginTop="7dp"/>
+        android:textSize="22sp" />
 
     <TextView
-        android:id="@+id/txtViewEndereco"
+        android:id="@+id/txtViewEnderecoLC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
         android:text="Endereco"
-        android:textSize="22sp"
-        android:layout_marginTop="7dp"/>
+        android:textSize="22sp" />
 
     <TextView
-        android:id="@+id/txtViewNumero"
+        android:id="@+id/txtViewNumeroLC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
         android:text="Numero"
-        android:textSize="22sp"
-        android:layout_marginTop="7dp"/>
+        android:textSize="22sp" />
 
     <TextView
-        android:id="@+id/txtViewCidade"
+        android:id="@+id/txtViewCidadeLC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
         android:text="Cidade"
-        android:textSize="22sp"
-        android:layout_marginTop="7dp"/>
+        android:textSize="22sp" />
 
     <TextView
-        android:id="@+id/txtViewEstado"
+        android:id="@+id/txtViewEstadoLC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
         android:text="Estado"
-        android:textSize="22sp"
-        android:layout_marginTop="7dp"/>
+        android:textSize="22sp" />
 
     <TextView
-        android:id="@+id/txtViewBairro"
+        android:id="@+id/txtViewBairroLC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
         android:text="Bairro"
-        android:textSize="22sp"
-        android:layout_marginTop="7dp"/>
+        android:textSize="22sp" />
 
     <TextView
-        android:id="@+id/txtViewCep"
+        android:id="@+id/txtViewCepLC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
         android:text="CEP"
-        android:textSize="22sp"
-        android:layout_marginTop="7dp"/>
+        android:textSize="22sp" />
 
     <TextView
-        android:id="@+id/txtViewEmail"
+        android:id="@+id/txtViewEmailLC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
         android:text="Email"
-        android:textSize="22sp"
-        android:layout_marginTop="7dp"/>
+        android:textSize="22sp" />
 
     <TextView
-        android:id="@+id/txtViewProfissao"
+        android:id="@+id/txtViewProfissaoLC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
         android:text="Profissao"
-        android:textSize="22sp"
-        android:layout_marginTop="7dp"/>
+        android:textSize="22sp" />
 </LinearLayout>

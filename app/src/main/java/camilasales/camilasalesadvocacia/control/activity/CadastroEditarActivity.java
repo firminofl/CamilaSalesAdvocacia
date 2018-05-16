@@ -5,31 +5,19 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.WindowManager;
-import android.widget.EditText;
-import android.widget.RadioButton;
-import android.widget.Spinner;
-import android.widget.Toast;
-
-import com.google.firebase.database.DatabaseReference;
 
 import java.util.Objects;
-import java.util.UUID;
 
-import camilasales.camilasalesadvocacia.DAO.ConfiguracaoFirebase;
 import camilasales.camilasalesadvocacia.R;
 import camilasales.camilasalesadvocacia.fragments.CadastroEditarAudienciaFragment;
 import camilasales.camilasalesadvocacia.fragments.CadastroEditarFisicaFragment;
 import camilasales.camilasalesadvocacia.fragments.CadastroEditarJuridicaFragment;
 import camilasales.camilasalesadvocacia.fragments.CadastroEditarProcessoFragment;
-import camilasales.camilasalesadvocacia.model.Entidades.PessoaFisica;
 
 public class CadastroEditarActivity extends AppCompatActivity {
 
-    private int telaAbrir;
-
+    /*
     private EditText edtNomePF;
     private EditText edtCpfPF;
     private EditText edtRgPF;
@@ -47,6 +35,7 @@ public class CadastroEditarActivity extends AppCompatActivity {
     private EditText edtEmailPF;
     private EditText edtProfissaoPF;
     public static Bundle bundle;
+    */
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
@@ -63,7 +52,7 @@ public class CadastroEditarActivity extends AppCompatActivity {
 
         Bundle bundle = getIntent().getExtras();
         assert bundle != null;
-        telaAbrir = bundle.getInt("TelaCadastroOpcoes");
+        int telaAbrir = bundle.getInt("TelaCadastroOpcoes");
 
         switch (telaAbrir) {
             case 1:
@@ -100,6 +89,14 @@ public class CadastroEditarActivity extends AppCompatActivity {
     }
 
     @Override
+    public void onBackPressed() {
+        startActivity(new Intent(CadastroEditarActivity.this, PrincipalActivity.class));
+        finish();
+        super.onBackPressed();
+    }
+
+    /*
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.botao_salvar_menu, menu);
@@ -116,7 +113,7 @@ public class CadastroEditarActivity extends AppCompatActivity {
 
             case R.id.menu_botao_salvar:
                 if (telaAbrir == 1) {
-                    cadastrarPessoaFisica();
+                    //cadastrarPessoaFisica();
                 } else if (telaAbrir == 2) {
                     Toast.makeText(CadastroEditarActivity.this, "Tô na tela 2", Toast.LENGTH_LONG).show();
                 }
@@ -129,13 +126,7 @@ public class CadastroEditarActivity extends AppCompatActivity {
         return true;
     }
 
-    @Override
-    public void onBackPressed() {
-        startActivity(new Intent(CadastroEditarActivity.this, PrincipalActivity.class));
-        finish();
-        super.onBackPressed();
-    }
-
+    //CADASTRAR PESSOA FISICA
     private void cadastrarPessoaFisica() {
         pegaInformacoesPessoaFisica();
         PessoaFisica pessoaFisica = new PessoaFisica();
@@ -264,4 +255,5 @@ public class CadastroEditarActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+    */
 }
