@@ -50,6 +50,7 @@ public class FisicaHomeFragment extends Fragment implements Serializable {
     private PessoaFisica excluirPessoaFisica;
     public static PessoaFisica editarPessoaFisica;
     private View view;
+    private PessoaFisica listarDetalhesPessoaFisica;
 
     public FisicaHomeFragment() {
         // Required empty public constructor
@@ -134,6 +135,13 @@ public class FisicaHomeFragment extends Fragment implements Serializable {
             }
         };
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long l) {
+                listarDetalhesPessoaFisica = (PessoaFisica) parent.getItemAtPosition(position);
+                Toast.makeText(context, "Pessoa: " + listarDetalhesPessoaFisica.getNome(), Toast.LENGTH_SHORT).show();
+            }
+        });
         registerForContextMenu(listView);
         return view;
     }
