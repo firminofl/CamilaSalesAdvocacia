@@ -29,6 +29,7 @@ import java.util.ArrayList;
 import camilasales.camilasalesadvocacia.DAO.ConfiguracaoFirebase;
 import camilasales.camilasalesadvocacia.R;
 import camilasales.camilasalesadvocacia.control.activity.CadastroEditarActivity;
+import camilasales.camilasalesadvocacia.control.activity.Pessoa_Fisica_Detalhada_Activity;
 import camilasales.camilasalesadvocacia.control.adapter.PessoaFisicaAdapter;
 import camilasales.camilasalesadvocacia.model.PessoaFisica;
 
@@ -143,7 +144,14 @@ public class FisicaHomeFragment extends Fragment implements Serializable {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long l) {
                 listarDetalhesPessoaFisica = (PessoaFisica) parent.getItemAtPosition(position);
-                Toast.makeText(context, "Pessoa: " + listarDetalhesPessoaFisica.getNome(), Toast.LENGTH_SHORT).show();
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("listaPFCompleto", listarDetalhesPessoaFisica);
+
+                Intent abrirPFCompleta = new Intent(context, Pessoa_Fisica_Detalhada_Activity.class);
+                abrirPFCompleta.putExtras(bundle);
+
+                startActivity(abrirPFCompleta);
+                getActivity().finish();
             }
         });
         registerForContextMenu(listView);
