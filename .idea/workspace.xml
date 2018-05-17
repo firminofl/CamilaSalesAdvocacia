@@ -11,13 +11,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6438de2c-23b4-4f40-b976-ea9841ae5b4b" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/activity/Pessoa_Fisica_Detalhada_Activity.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_pessoa__fisica__detalhada_.xml" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/adapter/PessoaFisicaAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/adapter/PessoaFisicaAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/lista_resumida_pessoa_fisica.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/lista_resumida_pessoa_fisica.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/FisicaHomeFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/FisicaHomeFragment.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/lista_completa_pessoa_fisica.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/lista_completa_pessoa_fisica.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,63 +47,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CadastroEditarActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/activity/CadastroEditarActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="46" column="43" lean-forward="false" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FisicaHomeFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/FisicaHomeFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-952">
-              <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CadastroEditarFisicaFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/CadastroEditarFisicaFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2419">
-              <caret line="212" column="74" lean-forward="false" selection-start-line="212" selection-start-column="74" selection-end-line="212" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PessoaFisicaAdapter.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/adapter/PessoaFisicaAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="41" column="12" lean-forward="false" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lista_completa_pessoa_fisica.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/lista_completa_pessoa_fisica.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -113,7 +64,7 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="C:\Users\Filipe Firmino\.gradle\wrapper\dists\gradle-4.4-all\9br9xq1tocpiv8o6njlyu5op1\gradle-4.4" />
+        <entry key="$PROJECT_DIR$" value="C:\Users\filipelemos\.gradle\wrapper\dists\gradle-4.4-all\9br9xq1tocpiv8o6njlyu5op1\gradle-4.4" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -2281,7 +2232,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_cadastro_editar_audiencia.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/botao_atualizar_menu.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/lista_completa_pessoa_fisica.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/activity/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/model/Entidades/PessoaFisicaTest.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/model/entidades/PessoaFisica.java" />
@@ -2293,10 +2243,13 @@
         <option value="$PROJECT_DIR$/local.properties" />
         <option value="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/activity/CadastroEditarActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/activity/TesteEditarPFActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/FisicaHomeFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/CadastroEditarFisicaFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/adapter/PessoaFisicaAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/lista_resumida_pessoa_fisica.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_pessoa__fisica__detalhada_.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/FisicaHomeFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/adapter/PessoaFisicaAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/activity/Pessoa_Fisica_Detalhada_Activity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/lista_completa_pessoa_fisica.xml" />
       </list>
     </option>
   </component>
@@ -2410,7 +2363,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="sync.plugin.last.upgrade.timestamp" value="1526141406589" />
     <property name="device.picker.selection" value="0030021829" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1526565582888" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1526568663767" />
     <property name="android.profiler.active" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-mdpi" />
   </component>
@@ -2941,7 +2894,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32990867" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -3016,27 +2968,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-26/android.jar!/android/os/Build.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2058">
-          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-fragment/26.1.0/8279b00f5194701ff18363fa2958c5a26670b0ef/support-fragment-26.1.0-sources.jar!/android/support/v4/app/FragmentActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-fragment/26.1.0/8279b00f5194701ff18363fa2958c5a26670b0ef/support-fragment-26.1.0-sources.jar!/android/support/v4/app/BaseFragmentActivityApi16.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-fragment/26.1.0/8279b00f5194701ff18363fa2958c5a26670b0ef/support-fragment-26.1.0-sources.jar!/android/support/v4/app/BaseFragmentActivityApi14.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -3123,16 +3054,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_cadastro_editar_audiencia.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/botao_salvar_menu.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -3202,6 +3123,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3333,16 +3255,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/activity/CadastroEditarActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="46" column="43" lean-forward="false" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/lista_resumida_pessoa_fisica.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -3372,10 +3284,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_pessoa__fisica__detalhada_.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="7" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/CadastroEditarFisicaFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/activity/CadastroEditarActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="90" column="20" lean-forward="false" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/FisicaHomeFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-952">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        <state relative-caret-position="408">
+          <caret line="146" column="45" lean-forward="false" selection-start-line="146" selection-start-column="45" selection-end-line="146" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/adapter/PessoaFisicaAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="34" column="33" lean-forward="false" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/activity/Pessoa_Fisica_Detalhada_Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="48" column="10" lean-forward="false" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -3385,24 +3342,30 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        <state relative-caret-position="306">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/fragments/CadastroEditarFisicaFragment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_audiencia.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2419">
-          <caret line="212" column="74" lean-forward="false" selection-start-line="212" selection-start-column="74" selection-end-line="212" selection-end-column="74" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/camilasales/camilasalesadvocacia/control/adapter/PessoaFisicaAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_cadastro_editar_audiencia.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="41" column="12" lean-forward="false" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+        <state relative-caret-position="408">
+          <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="34" />
           <folding />
         </state>
       </provider>
