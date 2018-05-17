@@ -1,4 +1,4 @@
-package camilasales.camilasalesadvocacia.model.entidades;
+package camilasales.camilasalesadvocacia.model;
 
 import java.io.Serializable;
 

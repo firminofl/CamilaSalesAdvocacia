@@ -14,7 +14,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import camilasales.camilasalesadvocacia.R;
-import camilasales.camilasalesadvocacia.model.entidades.PessoaFisica;
+import camilasales.camilasalesadvocacia.model.PessoaFisica;
 
 public class PessoaFisicaAdapter extends ArrayAdapter<PessoaFisica> {
 

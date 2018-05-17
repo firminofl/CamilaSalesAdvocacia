@@ -29,9 +29,8 @@ import java.util.ArrayList;
 import camilasales.camilasalesadvocacia.DAO.ConfiguracaoFirebase;
 import camilasales.camilasalesadvocacia.R;
 import camilasales.camilasalesadvocacia.control.activity.CadastroEditarActivity;
-import camilasales.camilasalesadvocacia.control.activity.TesteEditarPFActivity;
 import camilasales.camilasalesadvocacia.control.adapter.PessoaFisicaAdapter;
-import camilasales.camilasalesadvocacia.model.entidades.PessoaFisica;
+import camilasales.camilasalesadvocacia.model.PessoaFisica;
 
 /**
  * A simple {@link Fragment} subclass.

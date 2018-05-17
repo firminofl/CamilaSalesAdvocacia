@@ -14,7 +14,7 @@ import camilasales.camilasalesadvocacia.fragments.CadastroEditarAudienciaFragmen
 import camilasales.camilasalesadvocacia.fragments.CadastroEditarFisicaFragment;
 import camilasales.camilasalesadvocacia.fragments.CadastroEditarJuridicaFragment;
 import camilasales.camilasalesadvocacia.fragments.CadastroEditarProcessoFragment;
-import camilasales.camilasalesadvocacia.model.entidades.PessoaFisica;
+import camilasales.camilasalesadvocacia.model.PessoaFisica;
 
 public class CadastroEditarActivity extends AppCompatActivity {
 

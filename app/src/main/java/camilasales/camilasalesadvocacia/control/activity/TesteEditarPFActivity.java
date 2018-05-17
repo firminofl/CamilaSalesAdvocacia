@@ -15,7 +15,7 @@ import com.google.firebase.database.DatabaseReference;
 
 import camilasales.camilasalesadvocacia.DAO.ConfiguracaoFirebase;
 import camilasales.camilasalesadvocacia.R;
-import camilasales.camilasalesadvocacia.model.entidades.PessoaFisica;
+import camilasales.camilasalesadvocacia.model.PessoaFisica;
 
 public class TesteEditarPFActivity extends AppCompatActivity {
 
