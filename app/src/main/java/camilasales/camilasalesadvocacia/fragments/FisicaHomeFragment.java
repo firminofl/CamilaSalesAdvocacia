@@ -69,16 +69,21 @@ public class FisicaHomeFragment extends Fragment implements Serializable {
 
         switch (item.getItemId()) {
             case R.id.menu_editar:
+                //Pega o objeto selecionado na lista
                 editarPessoaFisica = (PessoaFisica) listView.getItemAtPosition(info.position);
 
+                //Serializable da pessoa fisica
                 Bundle bundle = new Bundle();
                 bundle.putSerializable("editaPF", editarPessoaFisica);
 
-                Intent abrirEditTest = new Intent(context, TesteEditarPFActivity.class);
+                Intent abrirCadastroEditar = new Intent(context, CadastroEditarActivity.class);
 
-                abrirEditTest.putExtras(bundle);
+                //Anexa o serializable no intent para levar para a classe de CadastroEditarActivity
+                abrirCadastroEditar.putExtra("TelaCadastroOpcoes", 5);
+                abrirCadastroEditar.putExtras(bundle);
 
-                startActivity(abrirEditTest);
+                //Inicia a classe e envia o objeto para ela
+                startActivity(abrirCadastroEditar);
                 getActivity().finish();
 
                 return true;
