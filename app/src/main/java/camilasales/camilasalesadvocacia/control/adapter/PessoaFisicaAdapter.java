@@ -49,7 +49,7 @@ public class PessoaFisicaAdapter extends ArrayAdapter<PessoaFisica> {
         ImageView ivGeneroSexual = (ImageView) viewRS.findViewById(R.id.ivListaResumida);
         TextView txtViewNome = (TextView) viewRS.findViewById(R.id.txtViewNomeLR);
         TextView txtViewCpf = (TextView) viewRS.findViewById(R.id.txtViewCpfLR);
-        TextView txtViewDataNasc = (TextView) viewRS.findViewById(R.id.txtViewDataNascLR);
+        TextView txtViewTelefone = (TextView) viewRS.findViewById(R.id.txtViewTelefoneLR);
 
         PessoaFisica pessoaFisica2 = pessoaFísica.get(position);
 
@@ -60,7 +60,7 @@ public class PessoaFisicaAdapter extends ArrayAdapter<PessoaFisica> {
         }
         txtViewNome.setText(pessoaFisica2.getNome());//Nome da pessoa fisica
         txtViewCpf.setText(pessoaFisica2.getCpf());//Cpf da pessoa fisica
-        txtViewDataNasc.setText(pessoaFisica2.getData_nasc());//Data Nascimento da pessoa fisica
+        txtViewTelefone.setText(pessoaFisica2.getTelefone());//Data Nascimento da pessoa fisica
     }
 
     private void instanciaESetaOsValoresCompletos(View view, int position) {

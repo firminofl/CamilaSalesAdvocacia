@@ -11,7 +11,7 @@
         android:layout_gravity="center"
         android:layout_marginBottom="4dp"
         android:layout_marginLeft="4dp"
-        android:layout_marginRight="4dp"
+        android:layout_marginRight="10dp"
         android:layout_marginTop="6dp"
         android:scaleType="center"
         android:src="@drawable/ic_launcher" />
@@ -27,22 +27,22 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="7dp"
             android:text="Nome"
-            android:textSize="20sp" />
+            android:textSize="22sp" />
 
         <TextView
             android:id="@+id/txtViewCpfLR"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
+            android:layout_marginTop="4dp"
             android:text="CPF"
-            android:textSize="15sp" />
+            android:textSize="14sp" />
 
         <TextView
-            android:id="@+id/txtViewDataNascLR"
+            android:id="@+id/txtViewTelefoneLR"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
-            android:text="Data Nascimento"
-            android:textSize="15sp" />
+            android:layout_marginTop="4dp"
+            android:text="Telefone"
+            android:textSize="14sp" />
     </LinearLayout>
 </LinearLayout>
