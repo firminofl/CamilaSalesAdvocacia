@@ -39,17 +39,14 @@ import camilasales.camilasalesadvocacia.model.PessoaFisica;
 public class FisicaHomeFragment extends Fragment implements Serializable {
 
 
-    private Button botaoCadastrarFisica;
     private ListView listView;
     private ArrayAdapter<PessoaFisica> pessoaFisicaAdapter;
     private ArrayList<PessoaFisica> pessoaFisica;
     private ValueEventListener valueEventListenerPF;
     private DatabaseReference firebase;
     private Context context;
-    private AlertDialog alerta;
     private PessoaFisica excluirPessoaFisica;
     public static PessoaFisica editarPessoaFisica;
-    private View view;
     private PessoaFisica listarDetalhesPessoaFisica;
 
     public FisicaHomeFragment() {
@@ -98,9 +95,9 @@ public class FisicaHomeFragment extends Fragment implements Serializable {
     @Override
     public View onCreateView(LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view = inflater.inflate(R.layout.fragment_fisica, container, false);
+        View view = inflater.inflate(R.layout.fragment_fisica, container, false);
 
-        botaoCadastrarFisica = (Button) view.findViewById(R.id.btnAddFisica);//floating button (+) na tab Física, para cadastrar pessoa física
+        Button botaoCadastrarFisica = (Button) view.findViewById(R.id.btnAddFisica);
         context = view.getContext();
 
         botaoCadastrarFisica.setOnClickListener(new View.OnClickListener() {
@@ -140,6 +137,7 @@ public class FisicaHomeFragment extends Fragment implements Serializable {
             }
         };
 
+        //Mostrar pessoa fisica com as informações completas
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long l) {
@@ -191,7 +189,7 @@ public class FisicaHomeFragment extends Fragment implements Serializable {
         });
 
         //Criar Alert Dialog
-        alerta = builder.create();
+        AlertDialog alerta = builder.create();
 
         //Exibir Alert Dialog
         alerta.show();

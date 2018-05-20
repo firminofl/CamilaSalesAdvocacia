@@ -22,7 +22,7 @@
             android:textSize="30sp"/>
 
         <EditText
-
+            android:id="@+id/edtNomePessoaJuridica"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nome / Razão social*"
@@ -30,7 +30,7 @@
             android:inputType="text"/>
 
         <EditText
-
+            android:id="@+id/edtCPNJPessoaJuridica"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="CNPJ*"
@@ -38,7 +38,7 @@
             android:inputType="date"/>
 
         <EditText
-
+            android:id="@+id/edtTelefonePessoaJuridica"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Telefone*"
@@ -46,7 +46,7 @@
             android:inputType="number"/>
 
         <EditText
-
+            android:id="@+id/edtEmailPessoaJuridica"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="E-mail"
@@ -60,7 +60,7 @@
             android:background="@drawable/customborder">
 
             <EditText
-
+                android:id="@+id/edtEnderecoPessoaJuridica"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Endereço"
@@ -68,7 +68,7 @@
                 android:inputType="text"/>
 
             <EditText
-
+                android:id="@+id/edtNumeroPessoaJuridica"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Número"
@@ -76,20 +76,20 @@
                 android:inputType="number"/>
 
             <EditText
-
+                android:id="@+id/edtCidadePessoaJuridica"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Cidade"
                 android:textColorHint="#000000"
                 android:inputType="text"/>
             <Spinner
-
+                android:id="@+id/spEstadoPessoaJuridica"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:entries="@array/estados"/>
 
             <EditText
-
+                android:id="@+id/edtBairroPessoaJuridica"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Bairro"
@@ -97,7 +97,7 @@
                 android:inputType="text"/>
 
             <EditText
-
+                android:id="@+id/edtCEPPessoaJuridica"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="CEP"

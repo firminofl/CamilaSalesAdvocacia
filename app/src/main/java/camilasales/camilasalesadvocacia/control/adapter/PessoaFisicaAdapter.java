@@ -39,17 +39,17 @@ public class PessoaFisicaAdapter extends ArrayAdapter<PessoaFisica> {
             assert inflater != null;
             viewResumida = inflater.inflate(R.layout.lista_resumida_pessoa_fisica, parent, false);
 
-            instanciaESetaOsValoresResumidos(viewResumida, position);
+            instanciaESetaOsValoresResumidosPF(viewResumida, position);
         }
         return viewResumida;
     }
 
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
-    private void instanciaESetaOsValoresResumidos(View viewRS, int position) {
-        ImageView ivGeneroSexual = (ImageView) viewRS.findViewById(R.id.ivListaResumida);
-        TextView txtViewNome = (TextView) viewRS.findViewById(R.id.txtViewNomeLR);
-        TextView txtViewCpf = (TextView) viewRS.findViewById(R.id.txtViewCpfLR);
-        TextView txtViewTelefone = (TextView) viewRS.findViewById(R.id.txtViewTelefoneLR);
+    private void instanciaESetaOsValoresResumidosPF(View viewRS, int position) {
+        ImageView ivGeneroSexual = (ImageView) viewRS.findViewById(R.id.ivListaResumidaPF);
+        TextView txtViewNome = (TextView) viewRS.findViewById(R.id.txtViewNomeLRPF);
+        TextView txtViewCpf = (TextView) viewRS.findViewById(R.id.txtViewCpfLRPF);
+        TextView txtViewTelefone = (TextView) viewRS.findViewById(R.id.txtViewTelefoneLRPF);
 
         PessoaFisica pessoaFisica2 = pessoaFísica.get(position);
 
