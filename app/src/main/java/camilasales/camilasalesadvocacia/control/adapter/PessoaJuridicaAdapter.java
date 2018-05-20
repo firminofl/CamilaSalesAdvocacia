@@ -46,7 +46,7 @@ public class PessoaJuridicaAdapter extends ArrayAdapter<PessoaJuridica> {
 
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     private void instanciaESetaOsValoresResumidosPJ(View viewRS, int position) {
-        ImageView ivGeneroSexual = (ImageView) viewRS.findViewById(R.id.ivListaResumidaPJ);
+        //ImageView ivEmpresa = (ImageView) viewRS.findViewById(R.id.ivListaResumidaPJ);
         TextView txtViewNome = (TextView) viewRS.findViewById(R.id.txtViewNomeLRPJ);
         TextView txtViewCnpj = (TextView) viewRS.findViewById(R.id.txtViewCpfLRPJ);
         TextView txtViewTelefone = (TextView) viewRS.findViewById(R.id.txtViewTelefoneLRPJ);
