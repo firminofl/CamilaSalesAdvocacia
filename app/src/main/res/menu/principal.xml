@@ -2,12 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/menu_pesquisar_inicial"
         android:orderInCategory="100"
         android:title="Pesquisar"
         app:actionViewClass="android.support.v7.widget.SearchView"
-        app:showAsAction="always"
+        app:showAsAction="collapseActionView|ifRoom"
         android:icon="@drawable/pesquisar_24px"/>
-
-
 </menu>

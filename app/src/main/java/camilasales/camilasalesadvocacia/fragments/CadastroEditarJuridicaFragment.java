@@ -92,8 +92,9 @@ public class CadastroEditarJuridicaFragment extends Fragment {
         super.getActivity().onBackPressed();
     }
 
+    //CADASTRAR PESSOA JURÍDICA
     private void cadastraPessoaJuridica() {
-        pegaInformacoesPessoaFisica();
+        pegaInformacoesPessoaJuridica();
         PessoaJuridica pessoaJuridica = new PessoaJuridica();
 
         if (!edtNomePJ.getText().toString().isEmpty() &&
@@ -110,6 +111,7 @@ public class CadastroEditarJuridicaFragment extends Fragment {
         }
     }
 
+    //SALVAR NO FIREBASE A PESSOA JURIDICA
     private void salvarPessoaJuridica(PessoaJuridica pessoaJuridica) {
         try {
             DatabaseReference firebase = ConfiguracaoFirebase.getFirebase().child("PessoaJuridica");
@@ -121,6 +123,7 @@ public class CadastroEditarJuridicaFragment extends Fragment {
         }
     }
 
+    //INFORMAÇÕES QUE NA HORA DE CADASTRAR E EDITAR SÃO AS MESMAS E PODE SER SIMPLIFICADO
     private void informacaosComumCadastraEdita(PessoaJuridica pessoaJuridica) {
         pessoaJuridica.setNome_razao_social(edtNomePJ.getText().toString());
         pessoaJuridica.setCnpj(edtCnpjPJ.getText().toString());
@@ -173,7 +176,8 @@ public class CadastroEditarJuridicaFragment extends Fragment {
         }
     }
 
-    private void pegaInformacoesPessoaFisica() {
+    //RECUPERA O LAYOUT DA PESSOA JURIDICA
+    private void pegaInformacoesPessoaJuridica() {
         edtNomePJ = (EditText) view.findViewById(R.id.edtNomePessoaJuridica);//Nome pessoa juridica
         edtCnpjPJ = (EditText) view.findViewById(R.id.edtCPNJPessoaJuridica);//CNPJ pessoa juridica
         edtTelefonePJ = (EditText) view.findViewById(R.id.edtTelefonePessoaJuridica);//Telefone pessoa juridica
