@@ -3,7 +3,9 @@ package camilasales.camilasalesadvocacia.control.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v4.view.ViewPager;
+import android.support.v7.widget.SearchView;
 import android.util.Log;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -79,6 +81,10 @@ public class PrincipalActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.principal, menu);
+        /*MenuItem menuPesquisar = menu.findItem(R.id.menu_pesquisar_inicial);
+        SearchView abaPesquisarSuperior = (SearchView) MenuItemCompat.getActionView(menuPesquisar);
+        abaPesquisarSuperior.setOnQueryTextListener((SearchView.OnQueryTextListener) PrincipalActivity.this);
+        */
         return true;
     }
 
@@ -90,7 +96,7 @@ public class PrincipalActivity extends AppCompatActivity
           int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-          if (id == R.id.action_settings) {
+          if (id == R.id.menu_pesquisar_inicial) {
               return true;
           }
 

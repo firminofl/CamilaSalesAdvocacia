@@ -56,8 +56,7 @@ public class FisicaHomeFragment extends Fragment implements Serializable {
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
-
-        getActivity().getMenuInflater().inflate(R.menu.opcoes_lista, menu);
+        getActivity().getMenuInflater().inflate(R.menu.opcoes_lista_pf, menu);
     }
 
     @Override
@@ -65,7 +64,7 @@ public class FisicaHomeFragment extends Fragment implements Serializable {
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
 
         switch (item.getItemId()) {
-            case R.id.menu_editar:
+            case R.id.menu_editar_pf:
                 //Pega o objeto selecionado na lista
                 editarPessoaFisica = (PessoaFisica) listView.getItemAtPosition(info.position);
 
@@ -84,7 +83,7 @@ public class FisicaHomeFragment extends Fragment implements Serializable {
                 getActivity().finish();
 
                 return true;
-            case R.id.menu_excluir:
+            case R.id.menu_excluir_pf:
                 excluirPessoaFisica(info.position);
                 return true;
             default:
