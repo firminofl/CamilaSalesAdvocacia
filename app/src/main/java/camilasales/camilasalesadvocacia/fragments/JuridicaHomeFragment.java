@@ -43,6 +43,7 @@ public class JuridicaHomeFragment extends Fragment {
     private DatabaseReference firebase;
     private PessoaJuridica excluirPessoaJuridica;
     private ListView listView;
+    private static PessoaJuridica editarPessoaJuridica;
 
     public JuridicaHomeFragment() {
         // Required empty public constructor
@@ -61,21 +62,21 @@ public class JuridicaHomeFragment extends Fragment {
         switch (item.getItemId()) {
             case R.id.menu_editar_pj:
                 //Pega o objeto selecionado na lista
-                //editarPessoaFisica = (PessoaFisica) listView.getItemAtPosition(info.position);
+                editarPessoaJuridica = (PessoaJuridica) listView.getItemAtPosition(info.position);
 
                 //Serializable da pessoa fisica
-                //Bundle bundle = new Bundle();
-                //bundle.putSerializable("editaPF", editarPessoaFisica);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("editaPJ", editarPessoaJuridica);
 
-                //Intent abrirCadastroEditar = new Intent(context, CadastroEditarActivity.class);
+                Intent abrirCadastroEditar = new Intent(context, CadastroEditarActivity.class);
 
                 //Anexa o serializable no intent para levar para a classe de CadastroEditarActivity
-                //abrirCadastroEditar.putExtra("TelaCadastroOpcoes", 5);
-                //abrirCadastroEditar.putExtras(bundle);
+                abrirCadastroEditar.putExtra("TelaCadastroOpcoes", 6);
+                abrirCadastroEditar.putExtras(bundle);
 
                 //Inicia a classe e envia o objeto para ela
-                //startActivity(abrirCadastroEditar);
-                //getActivity().finish();
+                startActivity(abrirCadastroEditar);
+                getActivity().finish();
 
                 return true;
             case R.id.menu_excluir_pj:
