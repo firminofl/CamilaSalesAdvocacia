@@ -11,6 +11,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Spinner;
@@ -164,6 +165,8 @@ public class CadastroEditarFisicaFragment extends Fragment {
     //EDITAR PESSOA FISICA
     public void atualizaCamposPessoaFisica(PessoaFisica objPFlista) {
         pegaInformacoesPessoaFisica();
+        ArrayAdapter adapterEstados;
+
         edtNomePF.setText(objPFlista.getNome());//Nome pessoa fisica
         edtCpfPF.setText(objPFlista.getCpf());//CPF pessoa fisica
         edtRgPF.setText(objPFlista.getRg());//RG pessoa fisica
@@ -178,7 +181,14 @@ public class CadastroEditarFisicaFragment extends Fragment {
         edtEnderecoPF.setText(objPFlista.getEndereco());//Endereco pessoa fisica
         edtNumeroPF.setText(objPFlista.getNumero());//Numero pessoa fisica
         edtCidadePF.setText(objPFlista.getCidade());//Cidade pessoa fisica
-        spEstadoPF.setSelection(0);//Estado pessoa fisica
+
+        adapterEstados = (ArrayAdapter) spEstadoPF.getAdapter();
+        for (int i = 0; i <= adapterEstados.getCount() - 1; i++) {
+            if (adapterEstados.getItem(i).equals(objPFlista.getEstado())) {
+                spEstadoPF.setSelection(i);//Estado pessoa fisica
+                break;
+            }
+        }
         edtBairroPF.setText(objPFlista.getBairro());//Bairro pessoa fisica
         edtCepPF.setText(objPFlista.getCep());//CEP pessoa fisica
         edtEmailPF.setText(objPFlista.getEmail());//Email pessoa fisica

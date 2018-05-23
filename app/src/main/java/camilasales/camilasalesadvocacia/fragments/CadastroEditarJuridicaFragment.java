@@ -3,7 +3,9 @@ package camilasales.camilasalesadvocacia.fragments;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -11,6 +13,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -44,10 +47,14 @@ public class CadastroEditarJuridicaFragment extends Fragment {
     private EditText edtCepPJ;
     private EditText edtTelefonePJ;
 
+    private int telaEditarCadastra;
+    private PessoaJuridica pessoaJuridicaEditar;
+
     public CadastroEditarJuridicaFragment() {
         // Required empty public constructor
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         setHasOptionsMenu(true);
@@ -56,7 +63,40 @@ public class CadastroEditarJuridicaFragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_cadastro_editar_juridica, container, false);
         context = view.getContext();
 
+        Bundle args = getArguments();
+        telaEditarCadastra = args.getInt("abrirEdicaoCadastro");
+
+        pessoaJuridicaEditar = (PessoaJuridica) args.getSerializable("editaPJ");
+
+        if (telaEditarCadastra == 2) {
+            atualizaCamposPessoaJuridica(pessoaJuridicaEditar);
+        }
+
         return view;
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+    private void atualizaCamposPessoaJuridica(PessoaJuridica objPJLista) {
+        pegaInformacoesPessoaJuridica();
+        ArrayAdapter adapterEstados;
+
+        edtNomePJ.setText(objPJLista.getNome_razao_social());//Nome pessoa juridica
+        edtCnpjPJ.setText(objPJLista.getCnpj());//CNPJ pessoa juridica
+        edtTelefonePJ.setText(objPJLista.getTelefone());//Telefone pessoa juridica
+        edtEmailPJ.setText(objPJLista.getEmail());//Email pessoa juridica
+        edtEnderecoPJ.setText(objPJLista.getEndereco());//Endereco pessoa juridica
+        edtNumeroPJ.setText(objPJLista.getNumero());//Numero pessoa juridica
+        edtCidadePJ.setText(objPJLista.getCidade());//Cidade pessoa juridica
+
+        adapterEstados = (ArrayAdapter) spEstadoPJ.getAdapter();
+        for (int i = 0; i <= adapterEstados.getCount() - 1; i++) {
+            if (adapterEstados.getItem(i).equals(objPJLista.getEstado())) {
+                spEstadoPJ.setSelection(i);//Estado pessoa juridica
+                break;
+            }
+        }
+        edtBairroPJ.setText(objPJLista.getBairro());//Bairro pessoa juridica
+        edtCepPJ.setText(objPJLista.getCep());//CEP pessoa juridica
     }
 
     @Override
@@ -74,15 +114,34 @@ public class CadastroEditarJuridicaFragment extends Fragment {
                 return true;
 
             case R.id.menu_botao_salvar:
-                cadastraPessoaJuridica();
-                /*if (telaEditarCadastra == 1) {
-                    cadastrarPessoaFisicaJuridica();
+                if (telaEditarCadastra == 1) {
+                    cadastraPessoaJuridica();
                 } else {
-                    editarPessoaFisica();
-                }*/
+                    editarPessoaJuridica();
+                }
                 return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void editarPessoaJuridica() {
+        pegaInformacoesPessoaJuridica();
+        PessoaJuridica pessoaJuridica = new PessoaJuridica();
+
+        if (!edtNomePJ.getText().toString().isEmpty() &&
+                !edtCnpjPJ.getText().toString().isEmpty() &&
+                !edtTelefonePJ.getText().toString().isEmpty()) {
+
+            pessoaJuridica.setUid(pessoaJuridicaEditar.getUid());
+            informacaosComumCadastraEdita(pessoaJuridica);
+
+            //ATUALIZA INFORMAÇÕES NO FIREBASE
+            DatabaseReference firebase = ConfiguracaoFirebase.getFirebase();
+            firebase.child("PessoaJuridica").child(pessoaJuridica.getUid()).setValue(pessoaJuridica);
+            onBackPressed();
+        } else {
+            Toast.makeText(context, "Campos obrigatórios em falta!", Toast.LENGTH_SHORT).show();
+        }
     }
 
     //Voltar tela inicial, mas sem ser Override

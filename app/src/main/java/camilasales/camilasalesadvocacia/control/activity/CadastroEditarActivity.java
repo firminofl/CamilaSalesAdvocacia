@@ -15,6 +15,7 @@ import camilasales.camilasalesadvocacia.fragments.CadastroEditarFisicaFragment;
 import camilasales.camilasalesadvocacia.fragments.CadastroEditarJuridicaFragment;
 import camilasales.camilasalesadvocacia.fragments.CadastroEditarProcessoFragment;
 import camilasales.camilasalesadvocacia.model.PessoaFisica;
+import camilasales.camilasalesadvocacia.model.PessoaJuridica;
 
 public class CadastroEditarActivity extends AppCompatActivity {
 
@@ -51,9 +52,16 @@ public class CadastroEditarActivity extends AppCompatActivity {
                 break;
 
             case 2:
+                //Serializable da pessoa fisica
+                bundle = new Bundle();
+                bundle.putInt("abrirEdicaoCadastro", 1);
+
+                CadastroEditarJuridicaFragment cadastroEditarJuridicaFragment = new CadastroEditarJuridicaFragment();
+                cadastroEditarJuridicaFragment.setArguments(bundle);
+
                 getSupportFragmentManager()
                         .beginTransaction()
-                        .add(R.id.TelaCadastroEditar, new CadastroEditarJuridicaFragment())
+                        .add(R.id.TelaCadastroEditar, cadastroEditarJuridicaFragment)
                         .commit();
                 break;
 
@@ -85,6 +93,23 @@ public class CadastroEditarActivity extends AppCompatActivity {
                 getSupportFragmentManager()
                         .beginTransaction()
                         .add(R.id.TelaCadastroEditar, cadastroEditarFisicaFragment)
+                        .commit();
+                break;
+
+            case 6:
+                PessoaJuridica pessoaJuridicaEditar = (PessoaJuridica) bundle.getSerializable("editaPJ");
+
+                //Serializable da pessoa juridica
+                bundle = new Bundle();
+                bundle.putSerializable("editaPJ", pessoaJuridicaEditar);
+                bundle.putInt("abrirEdicaoCadastro", 2);
+
+                cadastroEditarJuridicaFragment = new CadastroEditarJuridicaFragment();
+                cadastroEditarJuridicaFragment.setArguments(bundle);
+
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .add(R.id.TelaCadastroEditar, cadastroEditarJuridicaFragment)
                         .commit();
                 break;
 
