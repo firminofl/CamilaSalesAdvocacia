@@ -20,30 +20,40 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".control.activity.PrincipalActivity"
             android:label="CSACJ"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
         <activity
             android:name=".control.activity.CadastroEditarActivity"
-            android:screenOrientation="portrait"></activity>
-        <activity android:name=".control.activity.Caixa_Cadastra_Activity"></activity>
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".control.activity.Caixa_Cadastra_Activity">
+        </activity>
+
         <activity
             android:name=".model.SobreActivity"
             android:label="@string/title_activity_sobre"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
         <activity
             android:name=".control.activity.TesteEditarPFActivity"
-            android:screenOrientation="portrait"></activity>
-        <activity android:name=".control.adapter.PessoaFisicaAdapter" />
-        <activity android:name=".control.activity.Pessoa_Fisica_Detalhada_Activity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:screenOrientation="portrait">
+                    </activity>
+        <activity
+            android:name=".control.adapter.PessoaFisicaAdapter">
         </activity>
-    </application>
 
+        <activity
+            android:name=".control.activity.Pessoa_Fisica_Detalhada_Activity">
+        </activity>
+
+    </application>
 </manifest>
