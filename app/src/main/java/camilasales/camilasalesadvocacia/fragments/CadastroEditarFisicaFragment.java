@@ -23,6 +23,7 @@ import java.util.UUID;
 
 import camilasales.camilasalesadvocacia.DAO.ConfiguracaoFirebase;
 import camilasales.camilasalesadvocacia.R;
+import camilasales.camilasalesadvocacia.control.Mask;
 import camilasales.camilasalesadvocacia.control.activity.PrincipalActivity;
 import camilasales.camilasalesadvocacia.model.PessoaFisica;
 
@@ -74,6 +75,8 @@ public class CadastroEditarFisicaFragment extends Fragment {
         if (telaEditarCadastra == 2) {
             atualizaCamposPessoaFisica(pessoaFisicaEditar);
         }
+
+        pegaInformacoesPessoaFisica();
         return view;
     }
 
@@ -112,18 +115,22 @@ public class CadastroEditarFisicaFragment extends Fragment {
     private void pegaInformacoesPessoaFisica() {
         edtNomePF = (EditText) view.findViewById(R.id.edtNomePessoaFisica);//Nome pessoa fisica
         edtCpfPF = (EditText) view.findViewById(R.id.edtCpfPessoaFisica);//CPF pessoa fisica
+        edtCpfPF.addTextChangedListener(Mask.insert("###.###.###-##", edtCpfPF));
         edtRgPF = (EditText) view.findViewById(R.id.edtRgPessoaFisica);//RG pessoa fisica
         edtCnhPF = (EditText) view.findViewById(R.id.edtCnhPessoaFisica);//CNH pessoa fisica
         rbSexoFemininoPF = (RadioButton) view.findViewById(R.id.rbFemininoPessoaFisica);//Sexo Feminino pessoa fisica
         rbSexoMasculinoPF = (RadioButton) view.findViewById(R.id.rbMasculinoPessoaFisica);//Sexo Feminino pessoa fisica
         edtDataNascPF = (EditText) view.findViewById(R.id.edtDataNascPessoaFisica);//Data Nascimento pessoa fisica
+        edtDataNascPF.addTextChangedListener(Mask.insert("##/##/####", edtDataNascPF));
         edtTelefonePF = (EditText) view.findViewById(R.id.edtTelefonePessoaFisica);//Telefone pessoa fisica
+        edtTelefonePF.addTextChangedListener(Mask.insert("(##)#####-####",edtTelefonePF));
         edtEnderecoPF = (EditText) view.findViewById(R.id.edtEnderecoPessoaFisica);//Endereco pessoa fisica
         edtNumeroPF = (EditText) view.findViewById(R.id.edtNumeroPessoaFisica);//Numero pessoa fisica
         edtCidadePF = (EditText) view.findViewById(R.id.edtCidadePessoaFisica);//Cidade pessoa fisica
         spEstadoPF = (Spinner) view.findViewById(R.id.spEstadosPessoaFisica);//Estado pessoa fisica
         edtBairroPF = (EditText) view.findViewById(R.id.edtBairroPessoaFisica);//Bairro pessoa fisica
         edtCepPF = (EditText) view.findViewById(R.id.edtCepPessoaFisica);//CEP pessoa fisica
+        edtCepPF.addTextChangedListener(Mask.insert("##.###-###", edtCepPF));
         edtEmailPF = (EditText) view.findViewById(R.id.edtEmailPessoaFisica);//Email pessoa fisica
         edtProfissaoPF = (EditText) view.findViewById(R.id.edtProfissaoPessoaFisica);//Profissao pessoa fisica
     }
