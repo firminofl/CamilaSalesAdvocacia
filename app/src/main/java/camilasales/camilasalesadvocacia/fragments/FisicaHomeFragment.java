@@ -166,7 +166,7 @@ public class FisicaHomeFragment extends Fragment implements Serializable {
         builder.setTitle("Excluir");
 
         //Mensagem do Alert Dialog
-        builder.setMessage("Quer mesmo excluir: " + excluirPessoaFisica.getNome() + " ?");
+        builder.setMessage("Quer mesmo excluir?\n\n" + excluirPessoaFisica.getNome());
 
         //Botão SIM do Alert Dialog
         builder.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
