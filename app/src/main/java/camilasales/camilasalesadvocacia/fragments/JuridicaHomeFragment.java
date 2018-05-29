@@ -146,7 +146,7 @@ public class JuridicaHomeFragment extends Fragment {
         builder.setTitle("Excluir");
 
         //Mensagem do Alert Dialog
-        builder.setMessage("Quer mesmo excluir: " + excluirPessoaJuridica.getNome_razao_social() + " ?");
+        builder.setMessage("Quer mesmo excluir?\n\n" + excluirPessoaJuridica.getNome_razao_social());
 
         //Botão SIM do Alert Dialog
         builder.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
