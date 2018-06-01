@@ -132,7 +132,7 @@ public class FisicaHomeFragment extends Fragment implements Serializable {
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-
+                Toast.makeText(context, "Não foi possível encontrar as informações!", Toast.LENGTH_SHORT).show();
             }
         };
 

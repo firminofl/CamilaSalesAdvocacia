@@ -37,12 +37,7 @@ public class CadastroEditarAudienciaFragment extends Fragment {
     private EditText edtHorarioAudiencia;
     private EditText edtLocalAudiencia;
     private EditText edtVaraAudiencia;
-
-
-    public CadastroEditarAudienciaFragment() {
-        // Required empty public constructor
-    }
-
+    private Audiencia audienciaEditar;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -51,6 +46,15 @@ public class CadastroEditarAudienciaFragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_cadastro_editar_audiencia, container, false);
         context = view.getContext();
 
+        Bundle args = getArguments();
+        telaEditarCadastra = args.getInt("abrirEdicaoCadastro");
+
+        audienciaEditar = (Audiencia) args.getSerializable("editaAudiencia");
+
+        if (telaEditarCadastra == 2) {
+            assert audienciaEditar != null;
+            atualizaCamposAudiencia(audienciaEditar);
+        }
         pegaInformacoesAudiencia();
         return view;
     }
@@ -70,11 +74,11 @@ public class CadastroEditarAudienciaFragment extends Fragment {
                 return true;
 
             case R.id.menu_botao_salvar:
-                //if (telaEditarCadastra == 1) {
-                cadastrarAudiencia();
-                //} else {
-                //editarAudiencia();
-                //}
+                if (telaEditarCadastra == 1) {
+                    cadastrarAudiencia();
+                } else {
+                    editarAudiencia();
+                }
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -96,10 +100,7 @@ public class CadastroEditarAudienciaFragment extends Fragment {
         edtVaraAudiencia = (EditText) view.findViewById(R.id.edtVaraAudiencia);
     }
 
-    private void cadastrarAudiencia() {
-        pegaInformacoesAudiencia();
-        Audiencia audiencia = new Audiencia();
-
+    private void informacoesComumEntreCadastraEdita(Audiencia audiencia) {
         //DATA DA AUDIENCIA
         if (!edtDataAudiencia.getText().toString().isEmpty()) {
             audiencia.setData(edtDataAudiencia.getText().toString());
@@ -127,8 +128,15 @@ public class CadastroEditarAudienciaFragment extends Fragment {
         } else {
             audiencia.setVara(null);
         }
+    }
+
+    private void cadastrarAudiencia() {
+        pegaInformacoesAudiencia();
+        Audiencia audiencia = new Audiencia();
 
         audiencia.setUid(UUID.randomUUID().toString());
+        informacoesComumEntreCadastraEdita(audiencia);
+
         salvarAudiencia(audiencia);
         onBackPressed();
     }
@@ -141,6 +149,37 @@ public class CadastroEditarAudienciaFragment extends Fragment {
 
         } catch (Exception e) {
             e.printStackTrace();
+            Toast.makeText(context, "Falha ao editar!", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    private void atualizaCamposAudiencia(Audiencia audienciaEditar) {
+        pegaInformacoesAudiencia();
+
+        /*Na hora de atualizar campos com mascara a aplicação está travando
+        para solucionar: salvar somente os numeros e então setar eles sem o / ou :
+         */
+        edtDataAudiencia.setText(audienciaEditar.getData());//Data da audiencia
+        edtHorarioAudiencia.setText(audienciaEditar.getHorario());//Horario da audiencia
+        edtLocalAudiencia.setText(audienciaEditar.getLocal());//Local da audiencia
+        edtVaraAudiencia.setText(audienciaEditar.getVara());//Vara da audiencia
+    }
+
+    private void editarAudiencia() {
+        pegaInformacoesAudiencia();
+        Audiencia audiencia = new Audiencia();
+
+        audiencia.setUid(audienciaEditar.getUid());
+        informacoesComumEntreCadastraEdita(audiencia);
+
+        //ATUALIZA INFORMAÇÕES NO FIREBASE
+        try {
+            DatabaseReference firebase = ConfiguracaoFirebase.getFirebase();
+            firebase.child("Audiencia").child(audiencia.getUid()).setValue(audiencia);
+            Toast.makeText(context, "Audiência alterada com sucesso!", Toast.LENGTH_SHORT).show();
+        } catch (Exception e) {
+
+        }
+        onBackPressed();
     }
 }

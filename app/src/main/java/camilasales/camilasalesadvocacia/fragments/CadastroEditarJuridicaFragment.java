@@ -136,9 +136,16 @@ public class CadastroEditarJuridicaFragment extends Fragment {
             informacaosComumCadastraEdita(pessoaJuridica);
 
             //ATUALIZA INFORMAÇÕES NO FIREBASE
-            DatabaseReference firebase = ConfiguracaoFirebase.getFirebase();
-            firebase.child("PessoaJuridica").child(pessoaJuridica.getUid()).setValue(pessoaJuridica);
-            onBackPressed();
+            try {
+                DatabaseReference firebase = ConfiguracaoFirebase.getFirebase();
+                firebase.child("PessoaJuridica").child(pessoaJuridica.getUid()).setValue(pessoaJuridica);
+                Toast.makeText(context, "Pessoa jurídica alterada com sucesso!", Toast.LENGTH_SHORT).show();
+
+                onBackPressed();
+            }catch (Exception e){
+                e.printStackTrace();
+                Toast.makeText(context, "Falha ao editar!", Toast.LENGTH_SHORT).show();
+            }
         } else {
             Toast.makeText(context, "Campos obrigatórios em falta!", Toast.LENGTH_SHORT).show();
         }

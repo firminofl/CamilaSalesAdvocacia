@@ -128,7 +128,7 @@ public class JuridicaHomeFragment extends Fragment {
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-
+                Toast.makeText(context, "Não foi possível encontrar as informações!", Toast.LENGTH_SHORT).show();
             }
         };
         registerForContextMenu(listView);

@@ -30,6 +30,7 @@ import camilasales.camilasalesadvocacia.R;
 import camilasales.camilasalesadvocacia.control.activity.CadastroEditarActivity;
 import camilasales.camilasalesadvocacia.control.adapter.AudienciaAdapter;
 import camilasales.camilasalesadvocacia.model.Audiencia;
+import camilasales.camilasalesadvocacia.model.PessoaFisica;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -62,7 +63,7 @@ public class AudienciaHomeFragment extends Fragment {
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
 
         switch (item.getItemId()) {
-            /*
+
             case R.id.menu_editar_audiencia:
                 //Pega o objeto selecionado na lista
                 audienciaEditar = (Audiencia) listView.getItemAtPosition(info.position);
@@ -82,7 +83,7 @@ public class AudienciaHomeFragment extends Fragment {
                 getActivity().finish();
 
                 return true;
-                */
+
             case R.id.menu_excluir_audiencia:
                 excluirAudiencia(info.position);
                 return true;
@@ -132,7 +133,7 @@ public class AudienciaHomeFragment extends Fragment {
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-
+                Toast.makeText(context, "Não foi possível encontrar as informações!", Toast.LENGTH_SHORT).show();
             }
         };
 
