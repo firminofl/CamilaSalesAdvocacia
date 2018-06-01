@@ -178,7 +178,8 @@ public class CadastroEditarAudienciaFragment extends Fragment {
             firebase.child("Audiencia").child(audiencia.getUid()).setValue(audiencia);
             Toast.makeText(context, "Audiência alterada com sucesso!", Toast.LENGTH_SHORT).show();
         } catch (Exception e) {
-
+            e.printStackTrace();
+            Toast.makeText(context, "Falha ao editar!", Toast.LENGTH_SHORT).show();
         }
         onBackPressed();
     }
