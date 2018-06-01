@@ -123,7 +123,7 @@ public class CadastroEditarFisicaFragment extends Fragment {
         edtDataNascPF = (EditText) view.findViewById(R.id.edtDataNascPessoaFisica);//Data Nascimento pessoa fisica
         edtDataNascPF.addTextChangedListener(Mask.insert("##/##/####", edtDataNascPF));
         edtTelefonePF = (EditText) view.findViewById(R.id.edtTelefonePessoaFisica);//Telefone pessoa fisica
-        edtTelefonePF.addTextChangedListener(Mask.insert("(##)#####-####",edtTelefonePF));
+        edtTelefonePF.addTextChangedListener(Mask.insert("(##)#####-####", edtTelefonePF));
         edtEnderecoPF = (EditText) view.findViewById(R.id.edtEnderecoPessoaFisica);//Endereco pessoa fisica
         edtNumeroPF = (EditText) view.findViewById(R.id.edtNumeroPessoaFisica);//Numero pessoa fisica
         edtCidadePF = (EditText) view.findViewById(R.id.edtCidadePessoaFisica);//Cidade pessoa fisica
@@ -217,10 +217,16 @@ public class CadastroEditarFisicaFragment extends Fragment {
             infoComumEntreCadastraEditar(pessoaFisica);
 
             //ATUALIZA INFORMAÇÕES NO FIREBASE
-            DatabaseReference firebase = ConfiguracaoFirebase.getFirebase();
-            firebase.child("PessoaFisica").child(pessoaFisica.getUid()).setValue(pessoaFisica);
-            onBackPressed();
+            try {
+                DatabaseReference firebase = ConfiguracaoFirebase.getFirebase();
+                firebase.child("PessoaFisica").child(pessoaFisica.getUid()).setValue(pessoaFisica);
+                Toast.makeText(context, "Pessoa física alterada com sucesso!", Toast.LENGTH_SHORT).show();
 
+                onBackPressed();
+            }catch (Exception e){
+                e.printStackTrace();
+                Toast.makeText(context, "Falha ao editar!", Toast.LENGTH_SHORT).show();
+            }
         } else {
             Toast.makeText(context, "Campos obrigatórios em falta!", Toast.LENGTH_SHORT).show();
         }
