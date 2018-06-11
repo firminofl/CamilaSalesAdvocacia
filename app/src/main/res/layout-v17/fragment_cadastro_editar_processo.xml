@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <!-- PROCESSO -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Processo"
+            android:textSize="30sp" />
+
+        <!-- Escolha do tipo de cliente -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:text="Escolha um tipo de cliente*"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbPFProcesso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Pessoa Física" />
+
+            <RadioButton
+                android:id="@+id/rbPJProcesso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pessoa Jurídica" />
+        </RadioGroup>
+
+        <!-- Cliente física ou jurídica -->
+        <ExpandableListView
+            android:id="@+id/lvExpandableCliente"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:textAlignment="viewStart" />
+
+        <!-- Tipo de ação-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_Tipo_Acao_Processo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtTipoAcaoProcesso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tipo ação*"
+                android:inputType="textAutoCorrect" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Numero do processo-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_Numero_Processo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtNumeroProcesso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Número*"
+                android:inputType="textAutoCorrect" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Escolha da audiência -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="Escolha a audiência*"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <!-- Audiencia -->
+        <ExpandableListView
+            android:id="@+id/lvExpandableAudiencia"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:textAlignment="viewStart" />
+
+        <!-- Parte de pagamento e valores do processo -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customborder"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" Forma de pagamento*"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <!-- Escolha de forma de pagamento -->
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rbAVistaProcesso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="À vista" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cartão" />
+            </RadioGroup>
+
+            <!-- Valor da ação-->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_Valor_Acao_Processo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtValorAcaoProcesso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Valor da ação*"
+                    android:inputType="numberDecimal" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Parcelas no cartão-->
+            <Spinner
+                android:id="@+id/spnParcelasProcesso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/parcelas"
+                android:paddingBottom="10dp"
+                android:paddingTop="15dp" />
+
+            <!-- Data de vencimento -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_Data_Vencimento_Processo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtDataVencimentoProcesso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Data de vencimento*"
+                    android:inputType="date" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Prazo -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_Data_Prazo_Processo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtDataPrazoProcesso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Prazo para pagamento"
+                    android:inputType="date" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <!-- Legenda -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" " />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Legenda:"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" (*) - Campo obrigatório"
+            android:visibility="visible" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+    </LinearLayout>
+</ScrollView>
