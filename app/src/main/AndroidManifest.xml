@@ -55,5 +55,13 @@
             android:name=".control.activity.Pessoa_Fisica_Detalhada_Activity">
         </activity>
 
+        <activity
+            android:name=".control.activity.ListaClientePFProcesso">
+        </activity>
+
+        <activity
+            android:name=".control.activity.ListaClientePJProcesso">
+        </activity>
+
     </application>
 </manifest>

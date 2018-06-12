@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:2:1-59:12
-INJECTED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:2:1-59:12
-INJECTED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:2:1-59:12
-INJECTED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:2:1-59:12
+ADDED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:2:1-67:12
+INJECTED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:2:1-67:12
+INJECTED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:2:1-67:12
+INJECTED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:2:1-67:12
 MERGED from [com.android.support:design:26.1.0] C:\Users\filipelemos\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\e6c99d9f5cea4a5cad14c3a7deede7d3\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\filipelemos\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\25d81770f89fd7e68725ca90fb09584f\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\filipelemos\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3c2e9eb618408aabbc5674b73df53a2a\AndroidManifest.xml:2:1-11:12
@@ -39,20 +39,20 @@ MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\
 MERGED from [com.google.firebase:firebase-analytics-license:11.8.0] C:\Users\filipelemos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-license-11.8.0.aar\d04ddd104b137e4f4d3f160d4335e173\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] C:\Users\filipelemos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.8.0.aar\4496640003e2a0991ee307f5cb1ab932\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-iid-license:11.8.0] C:\Users\filipelemos\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.8.0.aar\feeea79a9fbdc6e62ea8185c4612522a\AndroidManifest.xml:2:1-6:12
-INJECTED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:2:1-59:12
-INJECTED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:2:1-59:12
-INJECTED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:2:1-67:12
+INJECTED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:2:1-67:12
+INJECTED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:2:1-67:12
 	package
 		ADDED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:3:5-47
 		INJECTED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:2:1-59:12
+		ADDED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:2:1-67:12
 		INJECTED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:2:1-59:12
+		ADDED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:2:1-67:12
 		INJECTED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:2:11-69
@@ -67,7 +67,7 @@ MERGED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\filipelemos\.grad
 	android:name
 		ADDED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:7:5-58:19
+ADDED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:7:5-66:19
 MERGED from [com.android.support:design:26.1.0] C:\Users\filipelemos\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\e6c99d9f5cea4a5cad14c3a7deede7d3\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:26.1.0] C:\Users\filipelemos\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\e6c99d9f5cea4a5cad14c3a7deede7d3\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\filipelemos\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\25d81770f89fd7e68725ca90fb09584f\AndroidManifest.xml:25:5-29:19
@@ -204,6 +204,14 @@ activity#camilasales.camilasalesadvocacia.control.activity.Pessoa_Fisica_Detalha
 ADDED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:54:9-56:20
 	android:name
 		ADDED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:55:13-78
+activity#camilasales.camilasalesadvocacia.control.activity.ListaClientePFProcesso
+ADDED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:58:9-60:20
+	android:name
+		ADDED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:59:13-68
+activity#camilasales.camilasalesadvocacia.control.activity.ListaClientePJProcesso
+ADDED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:62:9-64:20
+	android:name
+		ADDED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml:63:13-68
 uses-sdk
 INJECTED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\src\main\AndroidManifest.xml

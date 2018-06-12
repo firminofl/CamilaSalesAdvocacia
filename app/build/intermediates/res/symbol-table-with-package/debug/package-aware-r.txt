@@ -1018,7 +1018,7 @@ int id listProcesso 0x7f0900a4
 int id listViewPessoaFisica 0x7f0900a5
 int id listViewPessoaJuridica 0x7f0900a6
 int id list_item 0x7f0900a7
-int id lista_clientes_processo 0x7f0900a8
+int id lista_cliente_pf_processo 0x7f0900a8
 int id masked 0x7f0900a9
 int id media_actions 0x7f0900aa
 int id menu_botao_salvar 0x7f0900ab
@@ -1237,7 +1237,7 @@ int layout fragment_cadastro_editar_processo 0x7f0b0038
 int layout fragment_fisica 0x7f0b0039
 int layout fragment_juridica 0x7f0b003a
 int layout fragment_processo 0x7f0b003b
-int layout lista_clientes_processo 0x7f0b003c
+int layout lista_clientes_pf_pj_processo 0x7f0b003c
 int layout lista_completa_pessoa_fisica 0x7f0b003d
 int layout lista_resumida_audiencia 0x7f0b003e
 int layout lista_resumida_pessoa_fisica 0x7f0b003f

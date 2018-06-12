@@ -38,13 +38,15 @@ import camilasales.camilasalesadvocacia.model.PessoaFisica;
  */
 public class FisicaHomeFragment extends Fragment implements Serializable {
 
+    private Context context;
 
+    private ArrayList<PessoaFisica> pessoaFisica;
     private ListView listView;
     private ArrayAdapter<PessoaFisica> pessoaFisicaAdapter;
-    private ArrayList<PessoaFisica> pessoaFisica;
+
     private ValueEventListener valueEventListenerPF;
     private DatabaseReference firebase;
-    private Context context;
+
     private PessoaFisica excluirPessoaFisica;
     public static PessoaFisica editarPessoaFisica;
     private PessoaFisica listarDetalhesPessoaFisica;
