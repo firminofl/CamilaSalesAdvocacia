@@ -1,4 +1,4 @@
-#Mon Jun 11 07:47:37 BRT 2018
-base.0=C\:\\Users\\Dara Kaline\\Desktop\\Filipe\\CamilaSalesAdvocacia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+#Tue Jun 12 13:46:35 BRT 2018
+base.0=C\:\\Users\\filipelemos\\Desktop\\CSACJ\\CamilaSalesAdvocacia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
 path.0=classes.dex
 renamed.0=classes.dex
