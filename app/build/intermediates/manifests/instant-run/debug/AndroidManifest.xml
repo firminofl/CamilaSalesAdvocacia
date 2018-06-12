@@ -62,6 +62,10 @@
         </activity>
         <activity android:name="camilasales.camilasalesadvocacia.control.activity.Pessoa_Fisica_Detalhada_Activity" >
         </activity>
+        <activity android:name="camilasales.camilasalesadvocacia.control.activity.ListaClientePFProcesso" >
+        </activity>
+        <activity android:name="camilasales.camilasalesadvocacia.control.activity.ListaClientePJProcesso" >
+        </activity>
 
         <meta-data
             android:name="android.support.VERSION"

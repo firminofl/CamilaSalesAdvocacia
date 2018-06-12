@@ -3780,7 +3780,7 @@ public final class R {
     public static final int listViewPessoaFisica=0x7f0900a5;
     public static final int listViewPessoaJuridica=0x7f0900a6;
     public static final int list_item=0x7f0900a7;
-    public static final int lista_clientes_processo=0x7f0900a8;
+    public static final int lista_cliente_pf_processo=0x7f0900a8;
     public static final int masked=0x7f0900a9;
     public static final int media_actions=0x7f0900aa;
     public static final int menu_botao_salvar=0x7f0900ab;
@@ -4003,7 +4003,7 @@ public final class R {
     public static final int fragment_fisica=0x7f0b0039;
     public static final int fragment_juridica=0x7f0b003a;
     public static final int fragment_processo=0x7f0b003b;
-    public static final int lista_clientes_processo=0x7f0b003c;
+    public static final int lista_clientes_pf_pj_processo=0x7f0b003c;
     public static final int lista_completa_pessoa_fisica=0x7f0b003d;
     public static final int lista_resumida_audiencia=0x7f0b003e;
     public static final int lista_resumida_pessoa_fisica=0x7f0b003f;

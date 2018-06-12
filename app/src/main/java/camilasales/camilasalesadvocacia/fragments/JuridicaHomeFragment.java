@@ -37,12 +37,15 @@ import camilasales.camilasalesadvocacia.model.PessoaJuridica;
 public class JuridicaHomeFragment extends Fragment {
 
     private Context context;
+    private ListView listView;
+
     private ArrayList<PessoaJuridica> pessoaJuridica;
     private ArrayAdapter<PessoaJuridica> pessoaJuridicaAdapter;
+
     private ValueEventListener valueEventListenerPJ;
     private DatabaseReference firebase;
+
     private PessoaJuridica excluirPessoaJuridica;
-    private ListView listView;
     private static PessoaJuridica editarPessoaJuridica;
 
     public JuridicaHomeFragment() {
