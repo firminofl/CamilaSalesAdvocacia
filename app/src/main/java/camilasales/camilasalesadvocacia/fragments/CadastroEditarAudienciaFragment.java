@@ -37,6 +37,7 @@ public class CadastroEditarAudienciaFragment extends Fragment {
     private EditText edtHorarioAudiencia;
     private EditText edtLocalAudiencia;
     private EditText edtVaraAudiencia;
+    private EditText edtClienteAudiencia;
     private Audiencia audienciaEditar;
 
     @Override
@@ -97,6 +98,7 @@ public class CadastroEditarAudienciaFragment extends Fragment {
         edtHorarioAudiencia = (EditText) view.findViewById(R.id.edtHorarioAudiencia);
         edtHorarioAudiencia.addTextChangedListener(Mask.insert("##:##", edtHorarioAudiencia));
         edtLocalAudiencia = (EditText) view.findViewById(R.id.edtLocalAudiencia);
+        edtClienteAudiencia = view.findViewById(R.id.edtClieteAudiencia);
         edtVaraAudiencia = (EditText) view.findViewById(R.id.edtVaraAudiencia);
     }
 
@@ -120,6 +122,13 @@ public class CadastroEditarAudienciaFragment extends Fragment {
             audiencia.setLocal(edtLocalAudiencia.getText().toString());
         } else {
             audiencia.setLocal(null);
+        }
+
+        //CLIENTE DA AUDIENCIA
+        if (!edtClienteAudiencia.getText().toString().isEmpty()) {
+            audiencia.setCliente(edtClienteAudiencia.getText().toString());
+        } else {
+            audiencia.setCliente(null);
         }
 
         //VARA DA AUDIENCIA
@@ -162,6 +171,7 @@ public class CadastroEditarAudienciaFragment extends Fragment {
         edtDataAudiencia.setText(audienciaEditar.getData());//Data da audiencia
         edtHorarioAudiencia.setText(audienciaEditar.getHorario());//Horario da audiencia
         edtLocalAudiencia.setText(audienciaEditar.getLocal());//Local da audiencia
+        edtClienteAudiencia.setText(audienciaEditar.getCliente());//Cliente da audiencia
         edtVaraAudiencia.setText(audienciaEditar.getVara());//Vara da audiencia
     }
 

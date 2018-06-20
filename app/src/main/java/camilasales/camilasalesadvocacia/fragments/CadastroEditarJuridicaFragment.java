@@ -24,6 +24,7 @@ import java.util.UUID;
 
 import camilasales.camilasalesadvocacia.DAO.ConfiguracaoFirebase;
 import camilasales.camilasalesadvocacia.R;
+import camilasales.camilasalesadvocacia.control.Mask;
 import camilasales.camilasalesadvocacia.control.activity.PrincipalActivity;
 import camilasales.camilasalesadvocacia.model.PessoaJuridica;
 
@@ -246,7 +247,9 @@ public class CadastroEditarJuridicaFragment extends Fragment {
     private void pegaInformacoesPessoaJuridica() {
         edtNomePJ = (EditText) view.findViewById(R.id.edtNomePessoaJuridica);//Nome pessoa juridica
         edtCnpjPJ = (EditText) view.findViewById(R.id.edtCPNJPessoaJuridica);//CNPJ pessoa juridica
+        edtCnpjPJ.addTextChangedListener(Mask.insert("##.###.###/####-##", edtCnpjPJ));
         edtTelefonePJ = (EditText) view.findViewById(R.id.edtTelefonePessoaJuridica);//Telefone pessoa juridica
+        edtTelefonePJ.addTextChangedListener(Mask.insert("(##)#####-####",edtTelefonePJ));
         edtEmailPJ = (EditText) view.findViewById(R.id.edtEmailPessoaJuridica);//Email pessoa juridica
         edtEnderecoPJ = (EditText) view.findViewById(R.id.edtEnderecoPessoaJuridica);//Endereco pessoa juridica
         edtNumeroPJ = (EditText) view.findViewById(R.id.edtNumeroPessoaJuridica);//Numero pessoa juridica

@@ -1,7 +1,9 @@
 package camilasales.camilasalesadvocacia.control.activity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v4.view.ViewPager;
@@ -104,6 +106,7 @@ public class PrincipalActivity extends AppCompatActivity
     }
 
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -111,11 +114,11 @@ public class PrincipalActivity extends AppCompatActivity
         //Teste do git
         int id = item.getItemId();
 
-        if (id == R.id.nav_aniversario) {
+       /* if (id == R.id.nav_aniversario) {
             // Handle the camera action
         } else if (id == R.id.nav_prazos) {
 
-        } else if (id == R.id.nav_sobre) {
+        } else */ if (id == R.id.nav_sobre) {
             startActivity(new Intent(PrincipalActivity.this, SobreActivity.class));
             finish();
 
@@ -124,6 +127,8 @@ public class PrincipalActivity extends AppCompatActivity
             finish();
         } else if (id == R.id.nav_sair) {
             finish();
+            finish();
+            finishAndRemoveTask();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

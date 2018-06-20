@@ -5,6 +5,7 @@
         android:id="@+id/menu_pesquisar_inicial"
         android:orderInCategory="100"
         android:title="Pesquisar"
+        android:visible="false"
         app:actionViewClass="android.support.v7.widget.SearchView"
         app:showAsAction="collapseActionView|ifRoom"
         android:icon="@drawable/pesquisar_24px"/>

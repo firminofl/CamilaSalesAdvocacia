@@ -7,10 +7,19 @@ public class Audiencia implements Serializable{
     private String Uid;
     private String data;
     private String horario;
+    private String cliente;
     private String local;
     private String vara;
 
     public Audiencia() {
+    }
+
+    public String getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(String cliente) {
+        this.cliente = cliente;
     }
 
     public String getUid() {

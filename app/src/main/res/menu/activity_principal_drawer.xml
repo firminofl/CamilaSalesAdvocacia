@@ -8,6 +8,7 @@
         android:title="Comuns"
         android:checkableBehavior="single">
         <menu>
+            <!--
             <item
                 android:id="@+id/nav_aniversario"
                 android:icon="@drawable/aniversario_26px"
@@ -16,6 +17,7 @@
                 android:id="@+id/nav_prazos"
                 android:icon="@drawable/calendario_26px"
                 android:title="Prazos" />
+                -->
             <item
                 android:id="@+id/nav_caixa"
                 android:icon="@drawable/ic_mapa"
