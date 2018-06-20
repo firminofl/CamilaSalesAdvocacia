@@ -5,133 +5,78 @@
     build-mode="COLD"
     density="xxhdpi"
     format="10"
-    ir-eligibility="R_CLASS_CHANGE"
+    ir-eligibility="CLASS_ADDED"
     plugin-version="3.1.2"
-    timestamp="1528831508223"
-    token="-5983629652468101931"
+    timestamp="1529496694754"
+    token="-4766742381368693677"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="1099" />
+        duration="782" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="145" />
+        duration="47" />
     <task
         name="verifier"
-        duration="115" />
+        duration="15" />
 
     <artifact
-        location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        location="D:\Desenvolvimento Android\Projetos\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
         type="SPLIT" />
-    <artifact
-        location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1528830613530"
-        verifier="COLD_SWAP_REQUESTED" >
+        timestamp="1529496003961"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            location="D:\Desenvolvimento Android\Projetos\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            location="D:\Desenvolvimento Android\Projetos\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            location="D:\Desenvolvimento Android\Projetos\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            location="D:\Desenvolvimento Android\Projetos\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="D:\Desenvolvimento Android\Projetos\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            location="D:\Desenvolvimento Android\Projetos\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            location="D:\Desenvolvimento Android\Projetos\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="D:\Desenvolvimento Android\Projetos\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            location="D:\Desenvolvimento Android\Projetos\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            location="D:\Desenvolvimento Android\Projetos\CamilaSalesAdvocacia\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
+        <artifact
+            location="D:\Desenvolvimento Android\Projetos\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\Desenvolvimento Android\Projetos\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="R_CLASS_CHANGE"
-        timestamp="1528831508223"
+        ir-eligibility="CLASS_ADDED"
+        timestamp="1529496694754"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="D:\Desenvolvimento Android\Projetos\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
-        <artifact
-            location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\filipelemos\Desktop\CSACJ\CamilaSalesAdvocacia\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

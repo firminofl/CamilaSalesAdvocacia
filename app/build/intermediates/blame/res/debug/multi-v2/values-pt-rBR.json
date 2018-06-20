@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\filipelemos\\Desktop\\CSACJ\\CamilaSalesAdvocacia\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rBR\\values-pt-rBR.xml",
+            "outputFile": "D:\\Desenvolvimento Android\\Projetos\\CamilaSalesAdvocacia\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rBR\\values-pt-rBR.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\filipelemos\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.8.0.aar\\40cae17b93f660a5ba2e0ca5595f5fe2\\res\\values-pt-rBR\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "287",
-                        "endColumns": "203",
-                        "endOffsets": "490"
-                    },
-                    "to": {
-                        "startLines": "29",
-                        "startColumns": "4",
-                        "startOffsets": "3268",
-                        "endColumns": "203",
-                        "endOffsets": "3467"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\filipelemos\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\25d81770f89fd7e68725ca90fb09584f\\res\\values-pt-rBR\\values-pt-rBR.xml",
+                    "source": "C:\\Users\\filip\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\98f750b7ab607705d1b6918acf05535d\\res\\values-pt-rBR\\values-pt-rBR.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\filipelemos\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\9ec5f8ec81819fc2e74ecf5afba7083d\\res\\values-pt-rBR\\values.xml",
+                    "source": "C:\\Users\\filip\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.8.0.aar\\4895ce0c6aa5f5dee0a3b2a691fcaaf0\\res\\values-pt-rBR\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "287",
+                        "endColumns": "203",
+                        "endOffsets": "490"
+                    },
+                    "to": {
+                        "startLines": "29",
+                        "startColumns": "4",
+                        "startOffsets": "3268",
+                        "endColumns": "203",
+                        "endOffsets": "3467"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\filip\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\bcb9f22c04b09026b09cdf2b63c5d41e\\res\\values-pt-rBR\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
