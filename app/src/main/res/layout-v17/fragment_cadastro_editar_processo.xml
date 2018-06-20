@@ -20,7 +20,7 @@
             android:text="Processo"
             android:textSize="30sp" />
 
-        <!-- Escolha do tipo de cliente -->
+        <!-- Escolha do tipo de cliente
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -46,14 +46,15 @@
                 android:text="Pessoa Jurídica" />
         </RadioGroup>
 
-        <!-- Cliente física ou jurídica
+
+        //Cliente física ou jurídica
         <ExpandableListView
             android:id="@+id/lvExpandableCliente"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="start"
             android:textAlignment="viewStart" />
-            -->
+        -->
 
         <!-- Tipo de ação-->
         <android.support.design.widget.TextInputLayout
@@ -80,17 +81,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Número*"
-                android:inputType="textAutoCorrect" />
+                android:inputType="number" />
         </android.support.design.widget.TextInputLayout>
-
-        <!-- Escolha da audiência -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="8dp"
-            android:text="Escolha a audiência*"
-            android:textColor="#000000"
-            android:textSize="20sp" />
 
         <!-- Audiencia
         <ExpandableListView
@@ -129,6 +121,7 @@
                     android:text="À vista" />
 
                 <RadioButton
+                    android:id="@+id/rbCartaoProcesso"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Cartão" />
@@ -155,27 +148,30 @@
                 android:layout_height="wrap_content"
                 android:entries="@array/parcelas"
                 android:paddingBottom="10dp"
-                android:paddingTop="15dp" />
+                android:paddingTop="15dp"
+                android:visibility="invisible"/>
 
             <!-- Data de vencimento -->
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/input_layout_Data_Vencimento_Processo"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:visibility="invisible">
 
                 <EditText
                     android:id="@+id/edtDataVencimentoProcesso"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Data de vencimento*"
-                    android:inputType="date" />
+                    android:inputType="date"/>
             </android.support.design.widget.TextInputLayout>
 
             <!-- Prazo -->
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/input_layout_Data_Prazo_Processo"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:visibility="invisible">
 
                 <EditText
                     android:id="@+id/edtDataPrazoProcesso"
